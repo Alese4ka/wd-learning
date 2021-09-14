@@ -70,7 +70,7 @@ header {
 }
 
 /*First block*/
-.first-wrapper {
+#first-wrapper {
   background-color: var(--bg-color);
   margin-bottom: 5.9375rem;
 }
@@ -366,7 +366,7 @@ h3 {
   .header-block__phone-number {
     display: none;
   }
-  .first-wrapper {
+  #first-wrapper {
     padding-top: 1rem;
   }
   .first-block {
