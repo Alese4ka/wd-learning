@@ -5,25 +5,27 @@
   --font-fm: "Montserrat", sans-serif;
 }
 
+button {
+  background-color: var(--bg-sec-color);
+}
+
 header {
   background-color: var(--bg-color);
   margin: 0;
 }
-
 .header-block,
 .first-block,
-.second-block {
+.second-block,
+.third-block {
   max-width: 82rem;
   margin: 0 auto;
 }
-
 .header-block {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 2.5rem;
 }
-
 .header-block__logo {
   font-family: var(--font-fm);
   font-style: normal;
@@ -32,11 +34,9 @@ header {
   line-height: 2.3125rem;
   color: var(--font-color);
 }
-
 .header-block__main-menu {
   display: flex;
 }
-
 .header-block__main-menu > li {
   margin: 0.4375rem 1.25rem;
   font-family: var(--font-fm);
@@ -45,16 +45,14 @@ header {
   font-size: 1.125rem;
   line-height: 1.375rem;
 }
-
 .header-block__main-menu > li > a {
   text-decoration: none;
   color: var(--font-color);
 }
-
 .header-block__main-menu > li > a:hover {
   color: #ff352b;
+  transition: 0.5s;
 }
-
 .header-block__phone-number {
   margin-top: 0.3125rem;
   font-family: var(--font-fm);
@@ -65,21 +63,24 @@ header {
   color: var(--font-color);
   border-bottom: 0.0625rem solid var(--font-color);
 }
+.header-block__phone-number:hover {
+  color: #ff352b;
+  transition: 0.5s;
+  border-bottom: 0.0625rem solid #ff352b;
+}
 
 /*First block*/
 .first-wrapper {
   background-color: var(--bg-color);
+  margin-bottom: 5.9375rem;
 }
-
 .first-block {
   display: flex;
   justify-content: space-between;
 }
-
 .first-block__info {
-  display: block;
+  flex: 0 1 50%;
 }
-
 h1 {
   margin-top: 8.75rem;
   font-family: var(--font-fm);
@@ -89,7 +90,6 @@ h1 {
   line-height: 5.5625rem;
   color: var(--font-color);
 }
-
 .first-block__info > p {
   font-family: var(--font-fm);
   font-style: normal;
@@ -98,7 +98,6 @@ h1 {
   line-height: 2.3125rem;
   color: var(--font-color);
 }
-
 .first-block__info__main-button {
   margin-top: 3.125rem;
   background: #ff352b;
@@ -106,13 +105,12 @@ h1 {
   box-shadow: 0.625rem 0.625rem 0 -0.125rem var(--bg-color),
     0.625rem 0.625rem 0 0 #f2f2f2;
 }
-
 .first-block__info__main-button:hover {
   background: #ff772b;
-  box-shadow: 0.625rem 0.625rem 0 -0.125rem #f2f2f2,
-    0.625rem 0.625rem 0 0 #f2f2f2;
+  box-shadow: none;
+  transform: translate(0.625rem, 0.625rem);
+  transition: 0.5s;
 }
-
 .first-block__info__main-button > label {
   font-family: var(--font-fm);
   font-style: normal;
@@ -122,14 +120,16 @@ h1 {
   color: #f2f2f2;
   cursor: pointer;
 }
-
 .first-block__info__list {
   margin-top: 4.125rem;
   display: flex;
   justify-content: flex-start;
 }
-
 .first-block__info__list > li {
+  display: flex;
+  max-width: 8.5rem;
+  flex: 30%;
+  margin-right: 2.5rem;
   font-family: var(--font-fm);
   font-style: normal;
   font-weight: normal;
@@ -137,18 +137,20 @@ h1 {
   line-height: 1.3125rem;
   color: var(--font-color);
 }
-
-.first-block__info__list > li:nth-child(2),
-.first-block__info__list > li:nth-child(4),
-.first-block__info__list > li:nth-child(6) {
+.first-block__info__list > li > p {
   margin-left: 0.625rem;
+}
+.first-block__pic {
+  flex: 0 1 50%;
+}
+.first-block__pic__adapt {
+  display: none;
 }
 
 /*Second block*/
 .second-wrapper {
-  background-color: var(--bg-sec-color);
+  margin-bottom: 4rem;
 }
-
 h2 {
   font-family: var(--font-fm);
   font-style: normal;
@@ -157,23 +159,14 @@ h2 {
   line-height: 2.3125rem;
   color: var(--font-color);
   text-align: center;
-  margin-top: 5.9375rem;
+  margin-bottom: 3.75rem;
 }
-
 .second-block__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 3.75rem 0 3.375rem 0;
+  justify-content: space-around;
 }
-
-.second-block__list > li {
-  margin-bottom: 3.125rem;
-}
-
-.second-block__list > li:nth-child(1),
-.second-block__list > li:nth-child(3),
-.second-block__list > li:nth-child(5),
-.second-block__list > li:nth-child(7) {
+h4 {
   font-family: var(--font-fm);
   font-style: normal;
   font-weight: 300;
@@ -183,25 +176,7 @@ h2 {
   text-shadow: var(--bg-color) 0 0 2px;
   margin-right: 2.625rem;
 }
-
-.second-block__list > li:nth-child(1),
-.second-block__list > li:nth-child(3) {
-  margin-right: 2.8125rem;
-}
-
-.second-block__list > li:nth-child(3),
-.second-block__list > li:nth-child(7) {
-  margin-left: 8.375rem;
-}
-
-.second-block__list > li:nth-child(4) {
-  margin-right: 8.375rem;
-}
-
-.second-block__list > li:nth-child(2) > p,
-.second-block__list > li:nth-child(4) > p,
-.second-block__list > li:nth-child(6) > p,
-.second-block__list > li:nth-child(8) > p {
+h5 {
   font-family: var(--font-fm);
   font-style: normal;
   font-weight: 500;
@@ -209,11 +184,14 @@ h2 {
   line-height: 1.5rem;
   color: var(--font-color);
 }
-
-.second-block__list > li:nth-child(2),
-.second-block__list > li:nth-child(4),
-.second-block__list > li:nth-child(6),
-.second-block__list > li:nth-child(8) {
+.second-block__list__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.125rem;
+  flex: 0 1 50%;
+}
+.second-block__list__description > div > p {
   font-family: var(--font-fm);
   font-style: normal;
   font-weight: normal;
@@ -223,6 +201,10 @@ h2 {
   width: 24.375rem;
 }
 
+/*Third block*/
+#third-wrapper {
+  margin-bottom: 6.375rem;
+}
 h3 {
   font-family: var(--font-fm);
   font-style: normal;
@@ -233,14 +215,12 @@ h3 {
   text-align: center;
   margin: 0.9375rem 0 3.75rem 0;
 }
-
-.second-block__prices {
+.third-block__prices {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.second-block__prices > li {
+.third-block__prices > li {
   border: 1px solid #ebebeb;
   display: flex;
   flex-direction: column;
@@ -248,31 +228,26 @@ h3 {
   align-items: center;
   margin-right: 1.4375rem;
 }
-
-.second-block__prices > li:hover {
+.third-block__prices > li:hover {
   border: 1px solid var(--bg-color);
   box-shadow: 0 0.625rem 1.25rem 0 rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
 }
-
-.second-block__prices > li > h3 {
+.third-block__prices > li > h3 {
   margin: 5.2588rem 5.8463rem 3.7525rem 5.8125rem;
 }
-
-.second-block__prices > li > p {
+.third-block__prices > li > p {
   margin-bottom: 1.6044rem;
 }
-
-.second-block__prices > li > h2 {
+.third-block__prices > li > h2 {
   margin: 2.1906rem 0 3.2538rem 0;
 }
-
-.second-block__prices-button {
+.third-block__prices-button {
   background: var(--bg-color);
   padding: 1rem 5.9375rem 0.9375rem 6rem;
   margin: 0 5.1875rem 4.9162rem 5.5rem;
 }
-
-.second-block__prices-button > label {
+.third-block__prices-button > label {
   font-family: var(--font-fm);
   font-style: normal;
   font-weight: 500;
@@ -281,38 +256,35 @@ h3 {
   color: var(--font-color);
   cursor: pointer;
 }
-
-.second-block__prices-button:hover {
+.third-block__prices-button:hover {
   box-shadow: 0 0 1.25rem 0 rgba(254, 209, 0, 0.8);
+  transition: 0.5s;
 }
-
-.second-block__prices-button > label:hover {
+.third-block__prices-button > label:hover {
   color: var(--bg-sec-color);
+  transition: 0.5s;
 }
 
-.second-block__cars {
-  margin: 6.375rem 0 0.9375rem 0;
+/*Fourth block*/
+.fourth-block > h2 {
+  margin-bottom: 0.9375rem;
 }
-
-.second-block__cars-info {
+.fourth-block__cars-info {
   margin-bottom: 3.75rem;
 }
-
-.second-block__cars-button {
+.fourth-block__cars-button {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.second-block__cars-button > li > button {
+.fourth-block__cars-button > button {
   background: var(--bg-sec-color);
   margin-right: 1.25rem;
   border: 1px solid #ebebeb;
   padding: 0.8125rem 1rem 0.8125rem 1rem;
   width: 12.5625rem;
 }
-
-.second-block__cars-button > li > button > label {
+.fourth-block__cars-button > button > label {
   font-family: var(--font-fm);
   font-style: normal;
   font-weight: 500;
@@ -321,32 +293,27 @@ h3 {
   color: var(--font-color);
   cursor: pointer;
 }
-
-.second-block__cars-button > li > button:hover {
+.fourth-block__cars-button > button:hover {
   border: 1px solid var(--bg-color);
+  transition: 0.5s;
 }
-
-.second-block__cars__description {
+.fourth-block__cars__description {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.second-block__cars__description__info {
+.fourth-block__cars__description__info {
   margin: 0 7rem 0 7rem;
 }
-
-.second-block__cars__description__info__title {
+.fourth-block__cars__description__info__title {
   text-align: start;
   margin: 0 0 2.3125rem 0;
 }
-
-.second-block__cars__description > div > ul li:before {
+.fourth-block__cars__description > div > ul li:before {
   content: "✓";
   padding-right: 0.9781rem;
 }
-
-.second-block__cars__description > div > ul > li {
+.fourth-block__cars__description > div > ul > li {
   margin-bottom: 1.75rem;
   font-family: var(--font-fm);
   font-style: normal;
@@ -355,14 +322,12 @@ h3 {
   line-height: 1.3125rem;
   color: var(--font-color);
 }
-
-.second-block__cars__description__info__button {
+.fourth-block__cars__description__info__button {
   background: var(--bg-color);
   padding: 1rem 5.9375rem 0.9375rem 6rem;
   margin-top: 0.4375rem;
 }
-
-.second-block__cars__description__info__button > label {
+.fourth-block__cars__description__info__button > label {
   font-family: var(--font-fm);
   font-style: normal;
   font-weight: 500;
@@ -371,15 +336,71 @@ h3 {
   color: var(--font-color);
   cursor: pointer;
 }
-
-.second-block__cars__description__info__button:hover {
+.fourth-block__cars__description__info__button:hover {
   box-shadow: 0 0 1.25rem 0 rgba(254, 209, 0, 0.8);
+  transition: 0.5s;
 }
-
-.second-block__cars__description__info__button > label:hover {
+.fourth-block__cars__description__info__button > label:hover {
   color: var(--bg-sec-color);
+  transition: 0.5s;
+}
+.fourth-block__cars__description__pic {
+  margin: 2.9375rem 7rem 0 0;
 }
 
-.second-block__cars__description__pic {
-  margin: 2.9375rem 7rem 0 0;
+/*Adaptive*/
+@media (width: 768px) {
+  .first-block__pic {
+    display: none;
+  }
+  .first-block__pic__adapt {
+    display: block;
+  }
+}
+@media (width: 320px) {
+  .header-block__logo {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  .header-block__main-menu,
+  .header-block__phone-number {
+    display: none;
+  }
+  .first-wrapper {
+    padding-top: 1rem;
+  }
+  .first-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    margin-top: 0;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+  .first-block__info > p {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    padding-bottom: 20rem;
+  }
+  .first-block__info__main-button {
+    box-shadow: none;
+  }
+  .first-block__info__main-button:hover {
+    box-shadow: none;
+  }
+  .first-block__info__main-button > label {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .first-block__info__list {
+    display: none;
+  }
+  .first-block__pic {
+    display: none;
+  }
+  .first-block__pic__adapt {
+    display: block;
+  }
 }

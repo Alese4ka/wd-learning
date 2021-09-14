@@ -14,20 +14,20 @@
 <body>
     <header>
         <div class="header-block">
-            <div class="header-block__logo">
+            <a href="#header" class="header-block__logo">
                 MOVEE
-            </div>
+            </a>
             <nav>
                 <ul class="header-block__main-menu">
-                    <li><a href=#prices>Цены</a></li>
-                    <li><a href=#cars>Автопарк</a></li>
-                    <li><a href=#reviews>Отзывы</a></li>
-                    <li><a href=#contacts>Контакты</a></li>
+                    <li><a href=#third-wrapper>Цены</a></li>
+                    <li><a href=#fourth-wrapper>Автопарк</a></li>
+                    <li><a href=#fifth-wrapper>Отзывы</a></li>
+                    <li><a href=#footer>Контакты</a></li>
                 </ul>
             </nav>
-            <div class="header-block__phone-number">
+            <a href="#" class="header-block__phone-number">
                 8(029)-999-12-13
-            </div>
+            </a>
         </div>
     </header>
 
@@ -41,41 +41,85 @@
                         <label>Заказать</label>
                     </button>
                     <ul class="first-block__info__list">
-                        <li><img src="/assets/svg/truck.svg" alt="truck"></li>
-                        <li>Более 800 переездов</li>
-                        <li><img src="/assets/svg/triggerTwo.svg" alt="box"></li>
-                        <li>Бережная упаковка</li>
-                        <li><img src="/assets/svg/money.svg" alt="money"></li>
-                        <li>Фиксированная цена</li>
+                        <li>
+                            <img src="/assets/svg/truck.svg" alt="truck">
+                            <p>Более 800 переездов</p>
+                        </li>
+                        <li>
+                            <img src="/assets/svg/triggerTwo.svg" alt="box">
+                            <p>Бережная упаковка</p>
+                        </li>
+                        <li>
+                            <img src="/assets/svg/money.svg" alt="money">
+                            <p>Фиксированная цена</p>
+                        </li>
                     </ul>
                 </div>
-                <img src="/assets/img/Rectangle 3.png" alt="man-box">
+                <div class="first-block__pic">
+                    <img src="/assets/img/man.png" alt="man-box">
+                </div>
+                <div class="first-block__pic__adapt">
+                    <img src="/assets/img/man_adapt.png" alt="man-box">
+                </div>
             </div>
         </section>
 
         <section class="second-wrapper">
             <div class="second-block">
                 <h2>Как это происходит?</h2>
-                <ul class="second-block__list">
-                    <li>01</li>
-                    <li><p>Оценка объема предстоящих работ</p>Стоимость переезда зависит от количества комнат, вещей и мебели.</li>
-                    <li>02</li>
-                    <li><p>Упаковка вещей</p>Упаковываем вещи в коробки, подписываем. Габаритное и деликатное,  упаковываем отдельно.</li>
-                    <li>03</li>
-                    <li><p>Погрузка и транспортировка вещей</p>В нашем автопарке имеются машины, подходящие для мебели любых габаритов.</li>
-                    <li>04</li>
-                    <li><p>Распаковка и расстановка мебели</p>Распаковка и расстановка мебели</li>
-                </ul>
+                <div class="second-block__list">
+                    <div class="second-block__list__description">
+                        <div>
+                            <h4>01</h4>
+                        </div>
+                        <div>
+                            <h5>Оценка объема предстоящих работ</h5>
+                            <p>Стоимость переезда зависит от количества комнат, вещей и мебели.</p>
+                        </div>
+                    </div>
+                    <div class="second-block__list__description">
+                        <div>
+                            <h4>02</h4>
+                        </div>
+                        <div>
+                            <h5>Упаковка вещей</h5>
+                            <p>Упаковываем вещи в коробки, подписываем. Габаритное и деликатное,  упаковываем отдельно.</p>
+                        </div>
+                    </div>
+                    <div class="second-block__list__description">
+                        <div>
+                            <h4>03</h4>
+                        </div>
+                        <div>
+                            <h5>Погрузка и транспортировка вещей</h5>
+                            <p>В нашем автопарке имеются машины, подходящие для мебели любых габаритов.</p>
+                        </div>
+                    </div>
+                    <div class="second-block__list__description">
+                        <div>
+                            <h4>04</h4>
+                        </div>
+                        <div>
+                            <h5>Распаковка и расстановка мебели</h5>
+                            <p>Опытные грузчики быстро расставят мебель и уберут мусор от распаковки.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="third-wrapper">
+            <div class="third-block">
                 <h2>Цены</h2>
                 <h3>Фиксированная стоимость на переезд под ключ</h3>
-                <ul class="second-block__prices">
+                <ul class="third-block__prices">
                     <li>
                         <h3>1-комнатная кв-ра</h3>
                         <p>1 фургон</p>
                         <p>2 грузчика</p>
                         <p>Переезд за 4 часа</p>
                         <h2>70 руб.</h2>
-                        <button class="second-block__prices-button">
+                        <button class="third-block__prices-button">
                             <label>Заказать</label>
                         </button>
                     </li>
@@ -85,7 +129,7 @@
                         <p>2 грузчика</p>
                         <p>Переезд за 4 часа</p>
                         <h2>100 руб.</h2>
-                        <button class="second-block__prices-button">
+                        <button class="third-block__prices-button">
                             <label>Заказать</label>
                         </button>
                     </li>
@@ -95,57 +139,69 @@
                         <p>2 грузчика</p>
                         <p>Переезд за 6 часов</p>
                         <h2>150 руб.</h2>
-                        <button class="second-block__prices-button">
+                        <button class="third-block__prices-button">
                             <label>Заказать</label>
                         </button>
                     </li>
                 </ul>    
-                <h2 class="second-block__cars">Автопарк</h2>
-                <h3 class="second-block__cars-info">10 видов автомобилей от 800 кг до 10 тонн</h3>
-                <ul class="second-block__cars-button">
-                    <li><button>Газели</button></li>
-                    <li><button>Каблуки</button></li>
-                    <li><button>Грузовики</button></li>
-                </ul>
-                <div class="second-block__cars__description">
-                    <img src="/assets/svg/left.svg" alt="arrow-left">
-                    <div class="second-block__cars__description__info">
-                        <h3 class="second-block__cars__description__info__title">Газель 3 метра</h3>
+            </div>
+        </section>
+            
+        <section id="fourth-wrapper">
+            <div class="fourth-block">
+                <h2 class="fourth-block__cars">Автопарк</h2>
+                <h3 class="fourth-block__cars-info">10 видов автомобилей от 800 кг до 10 тонн</h3>
+                <div class="fourth-block__cars-button">
+                    <button>
+                        <label>Газели</label>
+                    </button>
+                    <button>
+                        <label>Каблуки</label>
+                    </button>
+                    <button>
+                        <label>Грузовики</label>
+                    </button>
+                </div>
+                <div class="fourth-block__cars__description">
+                    <button>
+                        <img src="/assets/svg/left.svg" alt="arrow-left">
+                    </button>
+                    <div class="fourth-block__cars__description__info">
+                        <h3 class="fourth-block__cars__description__info__title">Газель 3 метра</h3>
                         <ul>
                             <li>Ширина 2 м</li>
                             <li>Высота 2 м</li>
                             <li>Объем 16 м³</li>
                             <li>Грузоподъемность 1,5 т</li>
                         </ul>
-                        <button class="second-block__cars__description__info__button">
+                        <button class="fourth-block__cars__description__info__button">
                             <label>Заказать</label>
                         </button>
                     </div>
-                    <img class="second-block__cars__description__pic" src="assets/img/g_10 1.png" alt="gazel">
-                    <img src="/assets/svg/right.svg" alt="arrow-right">
+                    <div>
+                        <img class="fourth-block__cars__description__pic" src="assets/img/g_10 1.png" alt="gazel">
+                    </div>
+                    <button>
+                        <img src="/assets/svg/right.svg" alt="arrow-right">
+                    </button>
+                    
                 </div>
             </div>
         </section>
-        <section class="third-block">
+
+        <section id="fifth-wrapper">
             
         </section>
-        <section class="fourth-block">
-            
-        </section>
-        <section class="fifth-block">
+        <section class="sixth-wrapper">
 
         </section>
-        <section class="sixth-block">
+        <section class="seventh-wrapper">
 
         </section>
-        <section class="seventh-block">
-
-        </section>
-
     </main>
     
     <footer>
-        <section class="contacts">
+        <section>
 
         </section>
     </footer>
