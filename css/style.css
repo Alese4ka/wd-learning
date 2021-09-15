@@ -1,0 +1,12 @@
+:root {
+  --bg-color: #fed100;
+  --bg-sec-color: #ffffff;
+  --font-color: #333333;
+  --font-fm: "Montserrat", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+button {
+  background-color: var(--bg-sec-color);
+}
