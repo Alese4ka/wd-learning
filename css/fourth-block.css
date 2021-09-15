@@ -1,0 +1,82 @@
+/*Fourth block*/
+.fourth-block > h2 {
+  margin-bottom: 0.9375rem;
+}
+.fourth-block__cars-info {
+  margin-bottom: 3.75rem;
+}
+.fourth-block__cars-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fourth-block__cars-button > button {
+  background: var(--bg-sec-color);
+  margin-right: 1.25rem;
+  border: 0.0625rem solid #ebebeb;
+  padding: 0.8125rem 1rem 0.8125rem 1rem;
+  width: 12.5625rem;
+}
+.fourth-block__cars-button > button > label {
+  font-family: var(--font-fm);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: var(--font-color);
+  cursor: pointer;
+}
+.fourth-block__cars-button > button:hover {
+  border: 0.0625rem solid var(--bg-color);
+  transition: 0.5s;
+}
+.fourth-block__cars__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fourth-block__cars__description__info {
+  margin: 0 7rem 0 7rem;
+}
+.fourth-block__cars__description__info__title {
+  text-align: start;
+  margin: 0 0 2.3125rem 0;
+}
+.fourth-block__cars__description > div > ul li:before {
+  content: "✓";
+  padding-right: 0.9781rem;
+}
+.fourth-block__cars__description > div > ul > li {
+  margin-bottom: 1.75rem;
+  font-family: var(--font-fm);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  color: var(--font-color);
+}
+.fourth-block__cars__description__info__button {
+  background: var(--bg-color);
+  padding: 1rem 5.9375rem 0.9375rem 6rem;
+  margin-top: 0.4375rem;
+}
+.fourth-block__cars__description__info__button > label {
+  font-family: var(--font-fm);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: var(--font-color);
+  cursor: pointer;
+}
+.fourth-block__cars__description__info__button:hover {
+  box-shadow: 0 0 1.25rem 0 rgba(254, 209, 0, 0.8);
+  transition: 0.5s;
+}
+.fourth-block__cars__description__info__button > label:hover {
+  color: var(--bg-sec-color);
+  transition: 0.5s;
+}
+.fourth-block__cars__description__pic {
+  margin: 2.9375rem 7rem 0 0;
+}
