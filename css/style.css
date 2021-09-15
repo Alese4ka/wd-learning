@@ -4,7 +4,9 @@
   --font-color: #333333;
   --font-fm: "Montserrat", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 button {
   background-color: var(--bg-sec-color);
 }
@@ -33,6 +35,9 @@ header {
   font-size: 1.875rem;
   line-height: 2.3125rem;
   color: var(--font-color);
+}
+#header-block__hamburger-menu__toggle {
+  opacity: 0;
 }
 .header-block__main-menu {
   display: flex;
@@ -80,6 +85,7 @@ header {
 }
 .first-block__info {
   flex: 0 1 50%;
+  z-index: 2;
 }
 h1 {
   margin-top: 8.75rem;
@@ -140,8 +146,14 @@ h1 {
 .first-block__info__list > li > p {
   margin-left: 0.625rem;
 }
+.first-block__info__list > li > img {
+  max-width: 3.25rem;
+}
 .first-block__pic {
   flex: 0 1 50%;
+}
+.first-block__pic > img {
+  max-width: 34.5625rem;
 }
 .first-block__pic__adapt {
   display: none;
@@ -173,7 +185,7 @@ h4 {
   font-size: 3.125rem;
   line-height: 3.8125rem;
   color: var(--font-color);
-  text-shadow: var(--bg-color) 0 0 2px;
+  text-shadow: var(--bg-color) 0 0 0.125rem;
   margin-right: 2.625rem;
 }
 h5 {
@@ -221,7 +233,7 @@ h3 {
   align-items: center;
 }
 .third-block__prices > li {
-  border: 1px solid #ebebeb;
+  border: 0.0625rem solid #ebebeb;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -229,7 +241,7 @@ h3 {
   margin-right: 1.4375rem;
 }
 .third-block__prices > li:hover {
-  border: 1px solid var(--bg-color);
+  border: 0.0625rem solid var(--bg-color);
   box-shadow: 0 0.625rem 1.25rem 0 rgba(0, 0, 0, 0.1);
   transition: 0.5s;
 }
@@ -280,7 +292,7 @@ h3 {
 .fourth-block__cars-button > button {
   background: var(--bg-sec-color);
   margin-right: 1.25rem;
-  border: 1px solid #ebebeb;
+  border: 0.0625rem solid #ebebeb;
   padding: 0.8125rem 1rem 0.8125rem 1rem;
   width: 12.5625rem;
 }
@@ -294,7 +306,7 @@ h3 {
   cursor: pointer;
 }
 .fourth-block__cars-button > button:hover {
-  border: 1px solid var(--bg-color);
+  border: 0.0625rem solid var(--bg-color);
   transition: 0.5s;
 }
 .fourth-block__cars__description {
@@ -349,21 +361,185 @@ h3 {
 }
 
 /*Adaptive*/
-@media (width: 768px) {
+@media (min-width: 48rem) and (max-width: 62.5rem) {
+  .header-block,
+  .first-block {
+    margin: 0 1rem 0 1rem;
+  }
+  h1 {
+    margin-top: 4rem;
+    font-size: 3.0625rem;
+    line-height: 3.9375rem;
+  }
+  .first-block__info > p {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+  .first-block__info__list > li > p {
+    font-size: 0.625rem;
+    line-height: 1rem;
+  }
+  .first-block__info__list > li > img {
+    width: 70%;
+  }
+  .first-block__pic {
+    align-self: flex-end;
+    z-index: 1;
+  }
+  .first-block__pic > img {
+    width: 99%;
+  }
+}
+@media (min-width: 20.0625rem) and (max-width: 47.9375rem) {
+  .header-block {
+    margin-left: 1rem;
+  }
+  .header-block__logo {
+    font-size: 1.4375rem;
+    line-height: 1.8125rem;
+  }
+  .header-block__hamburger-menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 1.5625rem;
+    right: 1.25rem;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .header-block__hamburger-menu__btn > span,
+  .header-block__hamburger-menu__btn > span::before,
+  .header-block__hamburger-menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.125rem;
+    background-color: var(--font-color);
+  }
+  .header-block__hamburger-menu__btn > span::before {
+    content: "";
+    top: -0.5rem;
+  }
+  .header-block__hamburger-menu__btn > span::after {
+    content: "";
+    top: 0.5rem;
+  }
+  .header-block__main-menu,
+  .header-block__phone-number,
+  .first-block__info__list {
+    display: none;
+  }
+  .first-block {
+    justify-content: center;
+  }
+  .first-block__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h1 {
+    text-align: center;
+    margin-top: 1.875rem;
+    font-size: 3.0625rem;
+    line-height: 3.9375rem;
+  }
+  .first-block__info > p {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+  .first-block__info__main-button {
+    box-shadow: none;
+    margin-top: 0;
+  }
+  .first-block__info__main-button:hover {
+    box-shadow: none;
+    transform: none;
+  }
+  .first-block__info__main-button > label {
+    font-size: 1.375rem;
+    line-height: 1.6875rem;
+  }
   .first-block__pic {
     display: none;
   }
   .first-block__pic__adapt {
     display: block;
+    position: relative;
   }
 }
-@media (width: 320px) {
+@media (min-width: 20rem) and (max-width: 26.875rem) {
+  #first-wrapper {
+    margin-bottom: 2.5rem;
+  }
+  h1 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+  .first-block__info > p {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+  .second-block > h2 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .second-block__list {
+    margin-left: 2.75rem;
+  }
+  .second-block__list__description {
+    flex: 0 1 100%;
+    justify-content: flex-start;
+  }
+  .second-block__list__description > div > h5 {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  .second-block__list__description > div > p {
+    display: none;
+  }
+
+  .header-block {
+    margin-left: 1rem;
+  }
   .header-block__logo {
     font-size: 1rem;
     line-height: 1.25rem;
   }
+  .header-block__hamburger-menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 1.5625rem;
+    right: 1.25rem;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .header-block__hamburger-menu__btn > span,
+  .header-block__hamburger-menu__btn > span::before,
+  .header-block__hamburger-menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.125rem;
+    background-color: var(--font-color);
+  }
+  .header-block__hamburger-menu__btn > span::before {
+    content: "";
+    top: -0.5rem;
+  }
+  .header-block__hamburger-menu__btn > span::after {
+    content: "";
+    top: 0.5rem;
+  }
   .header-block__main-menu,
-  .header-block__phone-number {
+  .header-block__phone-number,
+  .first-block__info__list {
     display: none;
   }
   #first-wrapper {
@@ -378,14 +554,16 @@ h3 {
     margin-top: 0;
     font-size: 1.75rem;
     line-height: 2.25rem;
+    text-align: center;
   }
   .first-block__info > p {
     font-size: 1.125rem;
     line-height: 1.375rem;
-    padding-bottom: 20rem;
+    text-align: center;
   }
   .first-block__info__main-button {
     box-shadow: none;
+    margin-top: 0;
   }
   .first-block__info__main-button:hover {
     box-shadow: none;
@@ -393,9 +571,6 @@ h3 {
   .first-block__info__main-button > label {
     font-size: 1.25rem;
     line-height: 1.5rem;
-  }
-  .first-block__info__list {
-    display: none;
   }
   .first-block__pic {
     display: none;
