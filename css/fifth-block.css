@@ -1,0 +1,66 @@
+#fifth-wrapper {
+  background-color: var(--bg-color);
+}
+.fifth-block > h2 {
+  padding-top: 6.25rem;
+}
+.fifth-block > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: no-wrap;
+  margin-bottom: 3.75rem;
+}
+.fifth-block > div > div {
+  margin-right: 1.25rem;
+}
+.fifth-block > div > div > h3 {
+  margin: 0 0 0.625rem 0;
+  text-align: left;
+}
+.fifth-block > div > div > p > time {
+  font-family: var(--font-fm);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  color: var(--font-color);
+  margin-right: 0.625rem;
+}
+.fifth-block > div > div > p {
+  margin-bottom: 1.1875rem;
+}
+.fifth-block__text-reviews {
+  font-family: var(--font-fm);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  color: var(--font-color);
+}
+.fifth-block > div > div > span {
+  font-family: var(--font-fm);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  color: var(--font-color);
+  text-decoration: underline var(--font-color);
+  cursor: pointer;
+}
+.fifth-block > button {
+  display: block;
+  margin: 0 auto;
+  background-color: var(--bg-color);
+  border: 1px solid var(--font-color);
+  cursor: pointer;
+  padding: 0.8125rem 4rem;
+}
+.fifth-block > button > label {
+  font-family: var(--font-fm);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: var(--font-color);
+}
