@@ -351,15 +351,15 @@
     margin-bottom: 1.9375rem;
   }
   .fourth-block__cars__description__slider-adapt > button {
-    padding: 0.25rem;
+    padding: 4px;
     border-radius: 50%;
-    border: 0.125rem solid transparent;
+    border: 2px solid transparent;
   }
   .fourth-block__cars__description__slider-adapt > button:hover {
-    border: 0.125rem solid var(--bg-color);
+    border: 2px solid var(--bg-color);
     border-radius: 50%;
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 20px;
+    height: 20px;
   }
   .fourth-block__cars__description__info__button {
     display: none;
@@ -442,15 +442,15 @@
     margin-bottom: 1.9375rem;
   }
   .fourth-block__cars__description__slider-adapt > button {
-    padding: 0.5rem;
+    padding: 4px;
     border-radius: 50%;
-    border: 0.125rem solid transparent;
+    border: 2px solid transparent;
   }
   .fourth-block__cars__description__slider-adapt > button:hover {
-    border: 0.125rem solid var(--bg-color);
+    border: 2px solid var(--bg-color);
     border-radius: 50%;
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 20px;
+    height: 20px;
   }
   .fourth-block__cars__description__info__button {
     display: none;
