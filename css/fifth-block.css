@@ -12,7 +12,7 @@
   margin-bottom: 3.75rem;
 }
 .fifth-block > div > div {
-  margin-right: 1.25rem;
+  margin: 0 1.25rem;
 }
 .fifth-block > div > div > h3 {
   margin: 0 0 0.625rem 0;
@@ -52,7 +52,7 @@
   display: block;
   margin: 0 auto;
   background-color: var(--bg-color);
-  border: 1px solid var(--font-color);
+  border: 0.0625rem solid var(--font-color);
   cursor: pointer;
   padding: 0.8125rem 4rem;
 }
