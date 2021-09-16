@@ -237,7 +237,7 @@
     font-family: var(--font-fm);
     font-style: normal;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.25rem;
     line-height: 1.3125rem;
     color: var(--font-color);
     border-bottom: 0.0625rem solid var(--font-color);
@@ -249,6 +249,7 @@
   }
   .third-block {
     background-color: #f8fbff;
+    padding: 3.125rem 0;
   }
   .third-block > h2 {
     margin-bottom: 2.5rem;
@@ -299,7 +300,7 @@
     font-family: var(--font-fm);
     font-style: normal;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.25rem;
     line-height: 1.3125rem;
     color: var(--font-color);
     border-bottom: 0.0625rem solid var(--font-color);
