@@ -275,7 +275,8 @@
         </section>
         <section class="sixth-wrapper">
             <div class="sixth-block">
-                <h2>Закажи  переезд прямо сейчас со скидкой %</h2>
+                <h2 class="sixth-block__title">Закажи переезд прямо сейчас со скидкой %</h2>
+                <h2 class="sixth-block__title-adapt">Закажи переезд прямо сейчас</h2>
                 <p>Мы перезвоним в течении 10 секунд</p>
                 <div class="sixth-block__form-contact">
                     <input type="text" name="name" placeholder="Ваше имя" size="32">
@@ -307,16 +308,25 @@
                 <h6 class="sixth-block__form-money">Способ оплаты</h6>
                 <ul class="sixth-block__form-money-list">
                     <li>
-                        <input type="radio" id="money" name="money">
-                        <label for="money">Наличными курьеру</label>
+                        <label class="sixth-block__form-money-list__item">
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                            Наличными курьеру
+                        </label>
                     </li>
                     <li>
-                        <input type="radio" id="money" name="money">
-                        <label for="money">Картой курьеру</label>
+                        <label class="sixth-block__form-money-list__item">
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                            Картой курьеру
+                        </label>
                     </li>
                     <li>
-                        <input type="radio" id="money" name="money">
-                        <label for="money">Банковский перевод</label>
+                        <label class="sixth-block__form-money-list__item">
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                            Банковский перевод
+                        </label>
                     </li>
                 </ul>
                 <div class="sixth-block__form-services">
@@ -326,6 +336,12 @@
                     </button>
                 </div>
                 <div class="sixth-block__form-services__list">
+                    <!--<label class="sixth-block__form-services__list__item">
+                        <input type="checkbox" id="service" name="service">
+                        <span class="checkmark"></span>
+                        Вызов замерщика
+                    </label>-->
+
                     <input type="checkbox" id="service" name="service">
                     <label for="service">Вызов замерщика</label>
                     <input type="checkbox" id="service" name="service">
@@ -337,14 +353,19 @@
                     <input type="checkbox" id="service" name="service">
                     <label for="service">Крупногабаритные предметы</label>
                 </div>
-                <div>
+                <div class="sixth-block__form-time">
                     <time>5:37:25</time>
-                    <div>
-                        <button class="first-block__info__main-button">
+                    <div class="sixth-block__form-time__button">
+                        <button class="sixth-block__form-time__main-button">
                             <label>Заказать</label>
                         </button>
-                        <input type="checkbox" id="agree" name="agree">
-                        <label for="agree">Даю согласие на обработку данных</label>
+                        <button class="sixth-block__form-time__button-adapt">
+                            <label>Перезвонить мне</label>
+                        </button>
+                        <div>
+                            <input type="checkbox" id="agree" name="agree">
+                            <label class="sixth-block__form-time__agree" for="agree">Даю согласие на обработку данных</label>
+                        </div>
                     </div>
                 </div>
         </section>
