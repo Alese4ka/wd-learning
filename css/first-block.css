@@ -84,3 +84,127 @@ h1 {
 .first-block__pic__adapt {
   display: none;
 }
+/*Adaptive*/
+@media (max-width: 62.5rem) {
+  .first-block {
+    margin: 0 1rem 0 1rem;
+  }
+  h1 {
+    margin-top: 4rem;
+    font-size: 3.0625rem;
+    line-height: 3.9375rem;
+  }
+  .first-block__info > p {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+  .first-block__info__list > li > p {
+    font-size: 0.625rem;
+    line-height: 1rem;
+  }
+  .first-block__info__list > li > img {
+    width: 70%;
+  }
+  .first-block__pic {
+    align-self: flex-end;
+    z-index: 1;
+  }
+  .first-block__pic > img {
+    width: 99%;
+  }
+}
+@media (max-width: 47.9375rem) {
+  .first-block__info__list {
+    display: none;
+  }
+  .first-block {
+    justify-content: center;
+  }
+  .first-block__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h1 {
+    text-align: center;
+    margin-top: 1.875rem;
+    font-size: 3.0625rem;
+    line-height: 3.9375rem;
+  }
+  .first-block__info > p {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+  .first-block__info__main-button {
+    box-shadow: none;
+    margin-top: 0;
+  }
+  .first-block__info__main-button:hover {
+    box-shadow: none;
+    transform: none;
+  }
+  .first-block__info__main-button > label {
+    font-size: 1.375rem;
+    line-height: 1.6875rem;
+  }
+  .first-block__pic {
+    display: none;
+  }
+  .first-block__pic__adapt {
+    display: block;
+    position: relative;
+  }
+}
+@media (max-width: 26.875rem) {
+  #first-wrapper {
+    margin-bottom: 2.5rem;
+  }
+  h1 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+  .first-block__info > p {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+  .first-block__info__list {
+    display: none;
+  }
+  #first-wrapper {
+    padding-top: 1rem;
+  }
+  .first-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    margin-top: 0;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    text-align: center;
+  }
+  .first-block__info > p {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    text-align: center;
+  }
+  .first-block__info__main-button {
+    box-shadow: none;
+    margin-top: 0;
+  }
+  .first-block__info__main-button:hover {
+    box-shadow: none;
+  }
+  .first-block__info__main-button > label {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .first-block__pic {
+    display: none;
+  }
+  .first-block__pic__adapt {
+    display: block;
+  }
+}

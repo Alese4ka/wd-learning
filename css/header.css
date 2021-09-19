@@ -5,7 +5,9 @@ header {
 .header-block,
 .first-block,
 .second-block,
-.third-block {
+.third-block,
+.fourth-block,
+.fifth-block {
   max-width: 82rem;
   margin: 0 auto;
 }
@@ -56,4 +58,92 @@ header {
   color: #ff352b;
   transition: 0.5s;
   border-bottom: 0.0625rem solid #ff352b;
+}
+/*Adaptive*/
+@media (max-width: 62.5rem) {
+  .header-block {
+    margin: 0 1rem 0 1rem;
+  }
+}
+@media (max-width: 47.9375rem) {
+  .header-block {
+    margin-left: 1rem;
+  }
+  .header-block__logo {
+    font-size: 1.4375rem;
+    line-height: 1.8125rem;
+  }
+  .header-block__hamburger-menu {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 1.5625rem;
+    right: 1.25rem;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .header-block__hamburger-menu > span,
+  .header-block__hamburger-menu > span::before,
+  .header-block__hamburger-menu > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.125rem;
+    background-color: var(--font-color);
+  }
+  .header-block__hamburger-menu > span::before {
+    content: "";
+    top: -0.5rem;
+  }
+  .header-block__hamburger-menu > span::after {
+    content: "";
+    top: 0.5rem;
+  }
+  .header-block__main-menu,
+  .header-block__phone-number {
+    display: none;
+  }
+}
+@media (max-width: 26.875rem) {
+  .header-block {
+    margin-left: 1rem;
+  }
+  .header-block__logo {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  .header-block__hamburger-menu {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 1.5625rem;
+    right: 1.25rem;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .header-block__hamburger-menu > span,
+  .header-block__hamburger-menu > span::before,
+  .header-block__hamburger-menu > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.125rem;
+    background-color: var(--font-color);
+  }
+  .header-block__hamburger-menu > span::before {
+    content: "";
+    top: -0.5rem;
+  }
+  .header-block__hamburger-menu > span::after {
+    content: "";
+    top: 0.5rem;
+  }
+  .header-block__main-menu,
+  .header-block__phone-number {
+    display: none;
+  }
 }
