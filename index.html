@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/third-block.css">
     <link rel="stylesheet" href="css/fourth-block.css">
     <link rel="stylesheet" href="css/fifth-block.css">
+    <link rel="stylesheet" href="css/sixth-block.css">
     <title>Movee</title>
 </head>
 <body>
@@ -273,7 +274,79 @@
             </div>
         </section>
         <section class="sixth-wrapper">
-
+            <div class="sixth-block">
+                <h2>Закажи  переезд прямо сейчас со скидкой %</h2>
+                <p>Мы перезвоним в течении 10 секунд</p>
+                <div class="sixth-block__form-contact">
+                    <input type="text" name="name" placeholder="Ваше имя" size="32">
+                    <input type="tel" name="tel" placeholder="Телефон" size="32">
+                </div>
+                <div class="sixth-block__form-region">
+                    <h6 class="sixth-block__form-region-title">Укажите область</h6>
+                    <h6>Укажите город</h6>
+                </div>
+                <div class="sixth-block__form-region-select">
+                    <select name="select"> 
+                        <option value="" default disabled selected>Например: Минская</option>
+                        <option value="value1">Витебская</option>
+                        <option value="value3">Брестсткая</option>
+                        <option value="value3">Гомельская</option>
+                        <option value="value2">Гродненская</option>
+                        <option value="value2">Минская</option>
+                        <option value="value1">Могилевская</option>
+                    </select>
+                    <select name="select"> 
+                        <option value="value1">Мозырь</option>
+                        <option value="value3">Минск</option>
+                        <option value="value3">Брест</option>
+                        <option value="value2">Гродно</option>
+                        <option value="value2">Гомель</option>
+                        <option value="value1">Витебск</option>
+                    </select>
+                </div>
+                <h6 class="sixth-block__form-money">Способ оплаты</h6>
+                <ul class="sixth-block__form-money-list">
+                    <li>
+                        <input type="radio" id="money" name="money">
+                        <label for="money">Наличными курьеру</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="money" name="money">
+                        <label for="money">Картой курьеру</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="money" name="money">
+                        <label for="money">Банковский перевод</label>
+                    </li>
+                </ul>
+                <div class="sixth-block__form-services">
+                    <h6>Дополнительные услуги</h6>
+                    <button>
+                        <img src="./assets/svg/arrow_up.svg" alt="arrow_up">
+                    </button>
+                </div>
+                <div class="sixth-block__form-services__list">
+                    <input type="checkbox" id="service" name="service">
+                    <label for="service">Вызов замерщика</label>
+                    <input type="checkbox" id="service" name="service">
+                    <label for="service">Упаковка для хрупких предметов</label>
+                    <input type="checkbox" id="service" name="service">
+                    <label for="service">Кран</label>
+                    <input type="checkbox" id="service" name="service">
+                    <label for="service">Сборка мебели</label>
+                    <input type="checkbox" id="service" name="service">
+                    <label for="service">Крупногабаритные предметы</label>
+                </div>
+                <div>
+                    <time>5:37:25</time>
+                    <div>
+                        <button class="first-block__info__main-button">
+                            <label>Заказать</label>
+                        </button>
+                        <input type="checkbox" id="agree" name="agree">
+                        <label for="agree">Даю согласие на обработку данных</label>
+                    </div>
+                </div>
         </section>
         <section class="seventh-wrapper">
 

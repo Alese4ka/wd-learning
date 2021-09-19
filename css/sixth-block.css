@@ -1,0 +1,111 @@
+.sixth-wrapper {
+  margin-top: 7.75rem;
+}
+.sixth-block {
+  max-width: 45.4375rem;
+  margin: 0 auto;
+}
+.sixth-block > h2 {
+  margin-bottom: 0.625rem;
+}
+.sixth-block > p {
+  font-family: var(--font-fm);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  color: var(--font-color);
+  margin-left: 0.6875rem;
+  margin-bottom: 2.9375rem;
+}
+.sixth-block__form-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.sixth-block__form-contact > input {
+  font-family: var(--font-fm);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: rgba(51, 51, 51, 0.7);
+  padding-bottom: 0.875rem;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.7);
+}
+.sixth-block__form-region {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2.125rem;
+}
+h6 {
+  font-family: var(--font-fm);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: var(--font-color);
+}
+.sixth-block__form-region-title {
+  margin-right: 15rem;
+}
+.sixth-block__form-region-select {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+select {
+  font-family: var(--font-fm);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: var(--font-color);
+  width: 18.75rem;
+  padding-bottom: 0.875rem;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.7);
+}
+option[default] {
+  display: none;
+}
+.sixth-block__form-money {
+  margin-bottom: 2rem;
+}
+.sixth-block__form-money-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.9375rem;
+}
+.sixth-block__form-money-list > li {
+  font-family: var(--font-fm);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  color: var(--font-color);
+}
+.sixth-block__form-services {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+.sixth-block__form-services > h6 {
+  margin-right: 0.625rem;
+}
+.sixth-block__form-services__list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.sixth-block__form-services__list > label {
+  font-family: var(--font-fm);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  color: var(--font-color);
+  margin: 0 3.2rem 2.0625rem 1rem;
+}

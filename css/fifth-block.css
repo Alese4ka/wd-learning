@@ -1,5 +1,6 @@
 #fifth-wrapper {
   background-color: var(--bg-color);
+  padding-bottom: 5.875rem;
 }
 .fifth-block > h2 {
   padding-top: 6.25rem;
