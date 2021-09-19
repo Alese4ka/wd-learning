@@ -89,3 +89,176 @@
   margin-right: 7rem;
   max-width: 40.0625rem;
 }
+/*Adaptive*/
+@media (max-width: 75.625rem) {
+  #fourth-wrapper {
+    margin-bottom: 2.8125rem;
+  }
+  .fourth-block__cars-info {
+    display: none;
+  }
+  .fourth-block__cars-button {
+    margin-bottom: 2.5rem;
+  }
+  .fourth-block__cars-button > button {
+    border: none;
+  }
+  .fourth-block__cars-button > button:hover {
+    border: none;
+    text-decoration: underline var(--bg-color);
+  }
+  .fourth-block__cars-button > button > label:hover {
+    font-weight: 500;
+  }
+  .fourth-block__cars__description__pic {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .fourth-block__cars__description {
+    flex-direction: column;
+  }
+  .fourth-block__cars__description__info,
+  .fourth-block__cars__description > button > img {
+    display: none;
+  }
+  .fourth-block__cars__description__info__title-adapt,
+  .fourth-block__cars__description__slider-adapt,
+  .fourth-block__cars__description__info__button-adapt {
+    display: block;
+  }
+  .fourth-block__cars__description__info__title-adapt {
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin: 0;
+    margin-bottom: 1.9375rem;
+  }
+  .fourth-block__cars__description__slider-adapt > button {
+    padding: 4px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+  }
+  .fourth-block__cars__description__slider-adapt > button:hover {
+    border: 2px solid var(--bg-color);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .fourth-block__cars__description__info__button {
+    display: none;
+  }
+  .fourth-block__cars__description__info__button-adapt {
+    background: var(--bg-color);
+    padding: 1rem 5.9375rem 0.9375rem 6rem;
+    margin-top: 2.125rem;
+  }
+  .fourth-block__cars__description__info__button-adapt > label {
+    font-family: var(--font-fm);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--font-color);
+    cursor: pointer;
+  }
+  .fourth-block__cars__description__info__button-adapt:hover {
+    box-shadow: 0 0 1.25rem 0 rgba(254, 209, 0, 0.8);
+    transition: 0.5s;
+  }
+  .fourth-block__cars__description__info__button-adapt > label:hover {
+    color: var(--bg-sec-color);
+    transition: 0.5s;
+  }
+}
+@media (max-width: 48rem) {
+  #fourth-wrapper {
+    margin-bottom: 2.8125rem;
+  }
+  .fourth-block > h2 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .fourth-block__cars-info {
+    display: none;
+  }
+  .fourth-block__cars-button {
+    margin-bottom: 2.5rem;
+  }
+  .fourth-block__cars-button > button {
+    border: none;
+  }
+  .fourth-block__cars-button > button > label {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+  }
+  .fourth-block__cars-button > button:hover {
+    border: none;
+    text-decoration: underline var(--bg-color);
+  }
+  .fourth-block__cars-button > button > label:hover {
+    font-weight: 500;
+  }
+  .fourth-block__cars__description__pic {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .fourth-block__cars__description {
+    flex-direction: column;
+  }
+  .fourth-block__cars__description__info,
+  .fourth-block__cars__description > button > img {
+    display: none;
+  }
+  .fourth-block__cars__description__info__title-adapt,
+  .fourth-block__cars__description__slider-adapt,
+  .fourth-block__cars__description__info__button-adapt {
+    display: block;
+  }
+  .fourth-block__cars__description__info__title-adapt {
+    font-weight: normal;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    margin: 0;
+    margin-bottom: 1.9375rem;
+  }
+  .fourth-block__cars__description__slider-adapt > button {
+    padding: 4px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+  }
+  .fourth-block__cars__description__slider-adapt > button:hover {
+    border: 2px solid var(--bg-color);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .fourth-block__cars__description__info__button {
+    display: none;
+  }
+  .fourth-block__cars__description__info__button-adapt {
+    background: var(--bg-color);
+    padding: 1rem 5.9375rem 0.9375rem 6rem;
+    margin-top: 2.125rem;
+  }
+  .fourth-block__cars__description__info__button-adapt > label {
+    font-family: var(--font-fm);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--font-color);
+    cursor: pointer;
+  }
+  .fourth-block__cars__description__info__button-adapt:hover {
+    box-shadow: 0 0 1.25rem 0 rgba(254, 209, 0, 0.8);
+    transition: 0.5s;
+  }
+  .fourth-block__cars__description__info__button-adapt > label:hover {
+    color: var(--bg-sec-color);
+    transition: 0.5s;
+  }
+}
