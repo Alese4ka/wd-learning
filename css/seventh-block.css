@@ -11,3 +11,24 @@
   width: 100%;
   position: absolute;
 }
+.seventh-block__adapt {
+  display: none;
+}
+@media (max-width: 48rem) {
+  .seventh-block__adapt {
+    display: block;
+    font-family: var(--font-fm);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    color: var(--font-color);
+    margin: 2.875rem 0 0 2.75rem;
+  }
+  .seventh-block__adapt > p {
+    margin-bottom: 1.25rem;
+  }
+  .seventh-block__adapt-email {
+    text-decoration: underline;
+  }
+}

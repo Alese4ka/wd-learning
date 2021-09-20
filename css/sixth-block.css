@@ -1,5 +1,6 @@
 .sixth-wrapper {
   margin-top: 7.75rem;
+  margin-bottom: 6.5625rem;
 }
 .sixth-block {
   max-width: 45.4375rem;
@@ -236,7 +237,6 @@ select option[disabled="disabled"] {
   font-weight: normal;
   font-size: 0.75rem;
   line-height: 0.9375rem;
-  text-align: center;
   letter-spacing: 0.015em;
   color: var(--font-color);
 }
@@ -270,6 +270,7 @@ select option[disabled="disabled"] {
 @media (max-width: 48rem) {
   .sixth-wrapper {
     margin-top: 3.875rem;
+    margin-bottom: 4.4269rem;
   }
   .sixth-block__title-adapt {
     display: block;
