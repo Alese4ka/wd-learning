@@ -57,6 +57,10 @@
   cursor: pointer;
   padding: 0.8125rem 4rem;
 }
+.fifth-block > button:hover {
+  background: var(--bg-sec-color);
+  border: 0.0625rem solid var(--bg-sec-color);
+}
 .fifth-block > button > label {
   font-family: var(--font-fm);
   font-style: normal;
@@ -64,6 +68,9 @@
   font-size: 1.25rem;
   line-height: 1.5rem;
   color: var(--font-color);
+}
+.fifth-block > button > label:hover {
+  font-weight: bold;
 }
 /*Adaptive*/
 @media (max-width: 73.75rem) {

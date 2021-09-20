@@ -306,29 +306,26 @@
                     </select>
                 </div>
                 <h6 class="sixth-block__form-money">Способ оплаты</h6>
-                <ul class="sixth-block__form-money-list">
-                    <li>
-                        <label class="sixth-block__form-money-list__item">
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                            Наличными курьеру
-                        </label>
-                    </li>
-                    <li>
-                        <label class="sixth-block__form-money-list__item">
-                            <input type="radio" checked="checked" name="radio">
-                            <span class="checkmark"></span>
-                            Картой курьеру
-                        </label>
-                    </li>
-                    <li>
-                        <label class="sixth-block__form-money-list__item">
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                            Банковский перевод
-                        </label>
-                    </li>
-                </ul>
+                <div class="sixth-block__form-money-list">
+                        <p>
+                            <input type="radio" id="radio-one" name="radio">
+                            <label class="sixth-block__form-money-list__item" for="radio-one">
+                                <p class="sixth-block__form-money-list__item-p">Наличными курьеру</p>
+                            </label>
+                        </p>
+                        <p>
+                            <input type="radio" id="radio-two" name="radio">
+                            <label class="sixth-block__form-money-list__item" for="radio-two">
+                                <p class="sixth-block__form-money-list__item-p">Картой курьеру</p>
+                            </label>
+                        </p>
+                        <p>
+                            <input type="radio" id="radio-three" name="radio">
+                            <label class="sixth-block__form-money-list__item" for="radio-three">
+                                <p class="sixth-block__form-money-list__item-p">Банковский перевод</p>
+                            </label>
+                        </p>
+                </div>
                 <div class="sixth-block__form-services">
                     <h6>Дополнительные услуги</h6>
                     <button>
@@ -336,22 +333,26 @@
                     </button>
                 </div>
                 <div class="sixth-block__form-services__list">
-                    <!--<label class="sixth-block__form-services__list__item">
-                        <input type="checkbox" id="service" name="service">
-                        <span class="checkmark"></span>
-                        Вызов замерщика
-                    </label>-->
-
-                    <input type="checkbox" id="service" name="service">
-                    <label for="service">Вызов замерщика</label>
-                    <input type="checkbox" id="service" name="service">
-                    <label for="service">Упаковка для хрупких предметов</label>
-                    <input type="checkbox" id="service" name="service">
-                    <label for="service">Кран</label>
-                    <input type="checkbox" id="service" name="service">
-                    <label for="service">Сборка мебели</label>
-                    <input type="checkbox" id="service" name="service">
-                    <label for="service">Крупногабаритные предметы</label>
+                    <p>
+                        <input type="checkbox" id="service-one" name="service">
+                        <label class="sixth-block__form-services__list-label" for="service-one">Вызов замерщика</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="service-two" name="service">
+                        <label class="sixth-block__form-services__list-label" for="service-two">Упаковка для хрупких предметов</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="service-three" name="service">
+                        <label class="sixth-block__form-services__list-label" for="service-three">Кран</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="service-four" name="service">
+                        <label class="sixth-block__form-services__list-label" for="service-four">Сборка мебели</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="service-five" name="service">
+                        <label class="sixth-block__form-services__list-label" for="service-five">Крупногабаритные предметы</label>
+                    </p>
                 </div>
                 <div class="sixth-block__form-time">
                     <time>5:37:25</time>
@@ -362,9 +363,11 @@
                         <button class="sixth-block__form-time__button-adapt">
                             <label>Перезвонить мне</label>
                         </button>
-                        <div>
-                            <input type="checkbox" id="agree" name="agree">
-                            <label class="sixth-block__form-time__agree" for="agree">Даю согласие на обработку данных</label>
+                        <div class="sixth-block__form-time__agree"> 
+                            <p>
+                                <input type="checkbox" id="agree" name="agree">
+                                <label class="sixth-block__form-time__agree-label" for="agree">Даю согласие на обработку данных</label>
+                            </p>        
                         </div>
                     </div>
                 </div>
