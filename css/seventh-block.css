@@ -28,7 +28,15 @@
   .seventh-block__adapt > p {
     margin-bottom: 1.25rem;
   }
+  .seventh-block__adapt__phone-number {
+    color: var(--font-color);
+  }
+  .seventh-block__adapt__phone-number:hover {
+    color: #ff352b;
+    transition: 0.5s;
+  }
   .seventh-block__adapt-email {
+    margin-top: 1.25rem;
     text-decoration: underline;
   }
   .seventh-block__adapt-email > a {

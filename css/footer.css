@@ -26,6 +26,7 @@ footer {
   color: #0e0f12;
   margin-top: 2.25rem;
   width: 12.1875rem;
+  cursor: pointer;
 }
 .footer-block__title-p-two {
   width: 14.875rem;

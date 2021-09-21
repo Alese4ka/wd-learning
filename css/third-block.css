@@ -82,17 +82,15 @@ h3 {
   }
   .third-block__all-prices-btn {
     display: block;
-    margin: 0 auto;
+    text-align: center;
     cursor: pointer;
-  }
-  .third-block__all-prices-btn > label {
     font-family: var(--font-fm);
     font-style: normal;
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 1.3125rem;
     color: var(--font-color);
-    border-bottom: 0.0625rem solid var(--font-color);
+    text-decoration: underline;
   }
 }
 @media (max-width: 48rem) {
@@ -145,16 +143,14 @@ h3 {
   }
   .third-block__all-prices-btn {
     display: block;
-    margin: 0 auto;
+    text-align: center;
     cursor: pointer;
-  }
-  .third-block__all-prices-btn > label {
     font-family: var(--font-fm);
     font-style: normal;
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 1.3125rem;
     color: var(--font-color);
-    border-bottom: 0.0625rem solid var(--font-color);
+    text-decoration: underline;
   }
 }

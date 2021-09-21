@@ -138,6 +138,9 @@ select option[disabled="disabled"] {
 .sixth-block__form-services > h6 {
   margin-right: 0.625rem;
 }
+.sixth-block__form-services > div {
+  cursor: pointer;
+}
 .sixth-block__form-services__list {
   display: flex;
   justify-content: flex-start;

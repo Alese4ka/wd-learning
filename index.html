@@ -53,20 +53,20 @@
                     <button class="first-block__info__main-button">
                         <label>Заказать</label>
                     </button>
-                    <ul class="first-block__info__list">
-                        <li>
+                    <div class="first-block__info__list">
+                        <div class="first-block__info__list-item">
                             <img src="./assets/svg/truck.svg" alt="truck">
                             <p>Более 800 переездов</p>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="first-block__info__list-item">
                             <img src="./assets/svg/box.svg" alt="box">
                             <p>Бережная упаковка</p>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="first-block__info__list-item">
                             <img src="./assets/svg/money.svg" alt="money">
                             <p>Фиксированная цена</p>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="first-block__pic">
                     <img src="./assets/img/man.png" alt="man-box">
@@ -154,9 +154,9 @@
                         </button>
                     </div>
                 </div>
-                <button class="third-block__all-prices-btn">
-                    <label>Все цены</label>
-                </button> 
+                <span class="third-block__all-prices-btn">
+                    Все цены
+                </span> 
             </div>
         </section>
 
@@ -165,20 +165,20 @@
                 <h2>Автопарк</h2>
                 <h3 class="fourth-block__cars-info">10 видов автомобилей от 800 кг до 10 тонн</h3>
                 <div class="fourth-block__cars-button">
-                    <button>
-                        <label>Газели</label>
-                    </button>
-                    <button>
-                        <label>Каблуки</label>
-                    </button>
-                    <button>
-                        <label>Грузовики</label>
-                    </button>
+                    <div>
+                        Газели
+                    </div>
+                    <div>
+                        Каблуки
+                    </div>
+                    <div>
+                        Грузовики
+                    </div>
                 </div>
                 <div class="fourth-block__cars__description">
-                    <button>
+                    <div class="fourth-block__cars__description__arrow">
                         <img src="./assets/svg/arrow_left.svg" alt="arrow-left">
-                    </button>
+                    </div>
                     <div class="fourth-block__cars__description__info">
                         <h3 class="fourth-block__cars__description__info__title">Газель 3 метра</h3>
                         <ul>
@@ -196,28 +196,33 @@
                     </div>
                     <h3 class="fourth-block__cars__description__info__title-adapt">Газель 3 метра/1,5 тонны</h3>
                     <div class="fourth-block__cars__description__slider-adapt">
-                        <button>
-                            <img src="./assets/svg/dot.svg" alt="dot">
-                        </button>
-                        <button>
-                            <img src="./assets/svg/dot.svg" alt="dot">
-                        </button>
-                        <button>
-                            <img src="./assets/svg/dot.svg" alt="dot">
-                        </button>
-                        <button>
-                            <img src="./assets/svg/dot.svg" alt="dot">
-                        </button>
-                        <button>
-                            <img src="./assets/svg/dot.svg" alt="dot">
-                        </button>
+                        <p>
+                            <input type="radio" id="radio-one" name="radio">
+                            <label for="radio-one"></label>
+                        </p>
+                        <p>
+                            <input type="radio" id="radio-two" name="radio">
+                            <label for="radio-two"></label>
+                        </p>
+                        <p>
+                            <input type="radio" id="radio-three" name="radio">
+                            <label for="radio-three"></label>
+                        </p>
+                        <p>
+                            <input type="radio" id="radio-four" name="radio">
+                            <label for="radio-four"></label>
+                        </p>
+                        <p>
+                            <input type="radio" id="radio-five" name="radio">
+                            <label for="radio-five"></label>
+                        </p>
                     </div>
                     <button class="fourth-block__cars__description__info__button-adapt">
                         <label>Заказать</label>
                     </button>
-                    <button>
+                    <div class="fourth-block__cars__description__arrow">
                         <img src="./assets/svg/arrow_right.svg" alt="arrow-right">
-                    </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -330,9 +335,9 @@
                 </div>
                 <div class="sixth-block__form-services">
                     <h6>Дополнительные услуги</h6>
-                    <button>
+                    <div>
                         <img src="./assets/svg/arrow_up.svg" alt="arrow_up">
-                    </button>
+                    </div>
                 </div>
                 <div class="sixth-block__form-services__list">
                     <p>
@@ -380,7 +385,9 @@
             </div>
             <div class="seventh-block__adapt">
                 <p>Брест</p>
-                <p>8 (029)-999-12-13</p>
+                <a href="tel:+375299991213" class="seventh-block__adapt__phone-number">
+                    8(029)-999-12-13
+                </a>
                 <p class="seventh-block__adapt-email"><a href="mailto:hello@movee.ru">hello@movee.ru</a></p>
             </div>
         </section>
@@ -405,18 +412,18 @@
                 </ul>
             </nav>
             <div class="footer-block__social-links">
-                <ul class="footer-block__social-menu">
-                    <li><a href="https://www.youtube.com/" target="_blank"><img src="./assets/svg/youtube.svg" alt="youtube"></a></li>
-                    <li><a href="https://vk.com/" target="_blank"><img src="./assets/svg/vk.svg" alt="vk"></a></li>
-                    <li><a href="https://facebook.com/" target="_blank"><img src="./assets/svg/facebook.svg" alt="facebook"></a></li>
-                    <li><a href="https://instagram.com/" target="_blank"><img src="./assets/svg/instagram.svg" alt="instagram"></a></li>
-                </ul>
+                <div class="footer-block__social-menu">
+                    <a href="https://www.youtube.com/" target="_blank"><img src="./assets/svg/youtube.svg" alt="youtube"></a>
+                    <a href="https://vk.com/" target="_blank"><img src="./assets/svg/vk.svg" alt="vk"></a>
+                    <a href="https://facebook.com/" target="_blank"><img src="./assets/svg/facebook.svg" alt="facebook"></a>
+                    <a href="https://instagram.com/" target="_blank"><img src="./assets/svg/instagram.svg" alt="instagram"></a>
+                </div>
                 <p class="footer-block__email"><a href="mailto:hello@movee.ru">hello@movee.ru</a></p>
                 <p class="footer-block__title">Поделиться в соц. сетях</p>
-                <ul class="footer-block__extra-social-menu">
-                    <li><a href="https://vk.com/" target="_blank"><img src="./assets/svg/vk_big.svg" alt="vk"></a></li>
-                    <li><a href="https://facebook.com/" target="_blank"><img src="./assets/svg/facebook_big.svg" alt="facebook"></a></li>
-                </ul>
+                <div class="footer-block__extra-social-menu">
+                    <a href="https://vk.com/" target="_blank"><img src="./assets/svg/vk_big.svg" alt="vk"></a>
+                    <a href="https://facebook.com/" target="_blank"><img src="./assets/svg/facebook_big.svg" alt="facebook"></a>
+                </div>
             </div>
             <div class="footer-block__callback">
                 <button class="footer-block__callback-btn">

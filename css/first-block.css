@@ -57,7 +57,7 @@ h1 {
   display: flex;
   justify-content: flex-start;
 }
-.first-block__info__list > li {
+.first-block__info__list-item {
   display: flex;
   max-width: 8.5rem;
   flex: 30%;
@@ -69,10 +69,10 @@ h1 {
   line-height: 1.3125rem;
   color: var(--font-color);
 }
-.first-block__info__list > li > p {
+.first-block__info__list-item > p {
   margin-left: 0.625rem;
 }
-.first-block__info__list > li > img {
+.first-block__info__list-item > img {
   max-width: 3.25rem;
 }
 .first-block__pic {
@@ -98,11 +98,11 @@ h1 {
     font-size: 1.5rem;
     line-height: 1.875rem;
   }
-  .first-block__info__list > li > p {
+  .first-block__info__list-item > p {
     font-size: 0.625rem;
     line-height: 1rem;
   }
-  .first-block__info__list > li > img {
+  .first-block__info__list-item > img {
     width: 70%;
   }
   .first-block__pic {
