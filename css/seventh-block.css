@@ -31,4 +31,11 @@
   .seventh-block__adapt-email {
     text-decoration: underline;
   }
+  .seventh-block__adapt-email > a {
+    color: var(--font-color);
+  }
+  .seventh-block__adapt-email > a:hover {
+    color: #ff352b;
+    transition: 0.5s;
+  }
 }
