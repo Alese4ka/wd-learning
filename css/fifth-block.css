@@ -1,5 +1,6 @@
 #fifth-wrapper {
   background-color: var(--bg-color);
+  padding-bottom: 5.875rem;
 }
 .fifth-block > h2 {
   padding-top: 6.25rem;
@@ -56,6 +57,10 @@
   cursor: pointer;
   padding: 0.8125rem 4rem;
 }
+.fifth-block > button:hover {
+  background: var(--bg-sec-color);
+  border: 0.0625rem solid var(--bg-sec-color);
+}
 .fifth-block > button > label {
   font-family: var(--font-fm);
   font-style: normal;
@@ -64,16 +69,18 @@
   line-height: 1.5rem;
   color: var(--font-color);
 }
+.fifth-block > button > label:hover {
+  font-weight: bold;
+}
 /*Adaptive*/
 @media (max-width: 73.75rem) {
   .fifth-block__reviews-adapt-three {
     display: none;
   }
 }
-@media (max-width: 35rem) {
-  .fifth-block__reviews-adapt-two,
-  .fifth-block__reviews-adapt-three {
-    display: none;
+@media (max-width: 48rem) {
+  .fifth-block > h2 {
+    padding-top: 2.5rem;
   }
   .fifth-block > h2 {
     font-size: 1.25rem;
@@ -84,5 +91,11 @@
     font-weight: 500;
     font-size: 1.125rem;
     line-height: 1.375rem;
+  }
+}
+@media (max-width: 35rem) {
+  .fifth-block__reviews-adapt-two,
+  .fifth-block__reviews-adapt-three {
+    display: none;
   }
 }

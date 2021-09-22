@@ -1,4 +1,3 @@
-/*Fourth block*/
 .fourth-block > h2 {
   margin-bottom: 0.9375rem;
 }
@@ -11,23 +10,22 @@
   align-items: center;
   margin-bottom: 3.75rem;
 }
-.fourth-block__cars-button > button {
+.fourth-block__cars-button > div {
   background: var(--bg-sec-color);
   margin-right: 1.25rem;
   border: 0.0625rem solid #ebebeb;
   padding: 0.8125rem 1rem 0.8125rem 1rem;
   width: 12.5625rem;
-}
-.fourth-block__cars-button > button > label {
   font-family: var(--font-fm);
   font-style: normal;
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.5rem;
+  text-align: center;
   color: var(--font-color);
   cursor: pointer;
 }
-.fourth-block__cars-button > button:hover {
+.fourth-block__cars-button > div:hover {
   border: 0.0625rem solid var(--bg-color);
   transition: 0.5s;
 }
@@ -35,6 +33,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.fourth-block__cars__description__arrow {
+  cursor: pointer;
 }
 .fourth-block__cars__description__info {
   margin: 0 7rem 0 7rem;
@@ -47,11 +48,11 @@
 .fourth-block__cars__description__slider-adapt {
   display: none;
 }
-.fourth-block__cars__description > div > ul li:before {
+.fourth-block__cars__description__info > ul li:before {
   content: "✓";
   padding-right: 0.9781rem;
 }
-.fourth-block__cars__description > div > ul > li {
+.fourth-block__cars__description__info > ul > li {
   margin-bottom: 1.75rem;
   font-family: var(--font-fm);
   font-style: normal;
@@ -100,14 +101,12 @@
   .fourth-block__cars-button {
     margin-bottom: 2.5rem;
   }
-  .fourth-block__cars-button > button {
+  .fourth-block__cars-button > div {
     border: none;
   }
-  .fourth-block__cars-button > button:hover {
+  .fourth-block__cars-button > div:hover {
     border: none;
     text-decoration: underline var(--bg-color);
-  }
-  .fourth-block__cars-button > button > label:hover {
     font-weight: 500;
   }
   .fourth-block__cars__description__pic {
@@ -119,13 +118,46 @@
     flex-direction: column;
   }
   .fourth-block__cars__description__info,
-  .fourth-block__cars__description > button > img {
+  .fourth-block__cars__description__arrow {
     display: none;
   }
   .fourth-block__cars__description__info__title-adapt,
-  .fourth-block__cars__description__slider-adapt,
   .fourth-block__cars__description__info__button-adapt {
     display: block;
+  }
+  .fourth-block__cars__description__slider-adapt {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+  }
+  /*Checked*/
+  .fourth-block__cars__description__slider-adapt input[type="radio"] + label {
+    display: block;
+    cursor: pointer;
+  }
+  .fourth-block__cars__description__slider-adapt input[type="radio"] {
+    display: none;
+  }
+  .fourth-block__cars__description__slider-adapt
+    input[type="radio"]
+    + label:before {
+    content: "";
+    background: url(/assets/svg/dot.svg) no-repeat center;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0.5rem 0.5rem 0.7rem 0.5rem;
+    color: transparent;
+  }
+  .fourth-block__cars__description__slider-adapt
+    input[type="radio"]:checked
+    + label:before {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--bg-color);
+    background: url(/assets/svg/dot_big.svg) no-repeat center;
+    margin: 0;
   }
   .fourth-block__cars__description__info__title-adapt {
     font-weight: normal;
@@ -133,17 +165,6 @@
     line-height: 1.5rem;
     margin: 0;
     margin-bottom: 1.9375rem;
-  }
-  .fourth-block__cars__description__slider-adapt > button {
-    padding: 4px;
-    border-radius: 50%;
-    border: 2px solid transparent;
-  }
-  .fourth-block__cars__description__slider-adapt > button:hover {
-    border: 2px solid var(--bg-color);
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
   }
   .fourth-block__cars__description__info__button {
     display: none;
@@ -186,19 +207,15 @@
   .fourth-block__cars-button {
     margin-bottom: 2.5rem;
   }
-  .fourth-block__cars-button > button {
+  .fourth-block__cars-button > div {
     border: none;
-  }
-  .fourth-block__cars-button > button > label {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.25rem;
   }
-  .fourth-block__cars-button > button:hover {
+  .fourth-block__cars-button > div:hover {
     border: none;
     text-decoration: underline var(--bg-color);
-  }
-  .fourth-block__cars-button > button > label:hover {
     font-weight: 500;
   }
   .fourth-block__cars__description__pic {
@@ -214,9 +231,41 @@
     display: none;
   }
   .fourth-block__cars__description__info__title-adapt,
-  .fourth-block__cars__description__slider-adapt,
   .fourth-block__cars__description__info__button-adapt {
     display: block;
+  }
+  .fourth-block__cars__description__slider-adapt {
+    display: flex;
+    justify-content: space-around;
+  }
+  /*Checked*/
+  .fourth-block__cars__description__slider-adapt input[type="radio"] + label {
+    display: block;
+    cursor: pointer;
+  }
+  .fourth-block__cars__description__slider-adapt input[type="radio"] {
+    display: none;
+  }
+  .fourth-block__cars__description__slider-adapt
+    input[type="radio"]
+    + label:before {
+    content: "";
+    background: url(/assets/svg/dot.svg) no-repeat center;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0.5rem 0.5rem 0.7rem 0.5rem;
+    color: transparent;
+  }
+  .fourth-block__cars__description__slider-adapt
+    input[type="radio"]:checked
+    + label:before {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--bg-color);
+    background: url(/assets/svg/dot_big.svg) no-repeat center;
+    margin: 0;
   }
   .fourth-block__cars__description__info__title-adapt {
     font-weight: normal;
@@ -224,17 +273,6 @@
     line-height: 0.9375rem;
     margin: 0;
     margin-bottom: 1.9375rem;
-  }
-  .fourth-block__cars__description__slider-adapt > button {
-    padding: 4px;
-    border-radius: 50%;
-    border: 2px solid transparent;
-  }
-  .fourth-block__cars__description__slider-adapt > button:hover {
-    border: 2px solid var(--bg-color);
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
   }
   .fourth-block__cars__description__info__button {
     display: none;

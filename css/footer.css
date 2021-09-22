@@ -1,0 +1,179 @@
+footer {
+  background-color: var(--bg-color);
+}
+.footer-block {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 6.25rem;
+  padding-bottom: 6.375rem;
+}
+.footer-block__logo {
+  font-family: var(--font-fm);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.875rem;
+  line-height: 2.3125rem;
+  color: var(--font-color);
+}
+.footer-block__title-p-one,
+.footer-block__title-p-two {
+  font-family: var(--font-fm);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  color: #0e0f12;
+  margin-top: 2.25rem;
+  width: 12.1875rem;
+  cursor: pointer;
+}
+.footer-block__title-p-two {
+  width: 14.875rem;
+}
+.footer-block__menu > li {
+  font-family: var(--font-fm);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.9375rem;
+}
+.footer-block__menu > li > a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+.footer-block__menu > li > a:hover {
+  color: #ff352b;
+  transition: 0.5s;
+}
+.footer-block__social-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+.footer-block__email {
+  font-family: var(--font-fm);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+.footer-block__email > a {
+  color: var(--font-color);
+}
+.footer-block__email > a:hover {
+  color: #ff352b;
+  transition: 0.5s;
+}
+.footer-block__title {
+  font-family: var(--font-fm);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: var(--font-color);
+  width: 9.375rem;
+  margin-bottom: 0.6875rem;
+}
+.footer-block__extra-social-menu {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-block__callback {
+  display: flex;
+  flex-direction: column;
+}
+.footer-block__callback-btn-adapt {
+  display: none;
+}
+.footer-block__callback-btn {
+  display: block;
+  margin: 0 auto;
+  background-color: var(--bg-color);
+  border: 0.0625rem solid var(--font-color);
+  cursor: pointer;
+  padding: 0.625rem 1.875rem;
+}
+.footer-block__callback-btn:hover {
+  background: var(--bg-sec-color);
+  border: 0.0625rem solid var(--bg-sec-color);
+}
+.footer-block__callback-btn > label {
+  font-family: var(--font-fm);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: var(--font-color);
+}
+.footer-block__phone-number {
+  font-family: var(--font-fm);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: var(--font-color);
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 0.9375rem;
+}
+.footer-block__phone-number:hover {
+  color: #ff352b;
+  transition: 0.5s;
+}
+@media (max-width: 48rem) {
+  .footer-block {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3.75rem;
+    padding-bottom: 3.125rem;
+  }
+  .footer-block__logo-title {
+    text-align: center;
+  }
+  .footer-block__title-p-one {
+    width: 11.6875rem;
+    margin-left: 1.5rem;
+  }
+  .footer-block__menu,
+  .footer-block__title-p-two {
+    margin-bottom: 2.875rem;
+  }
+  .footer-block__menu > li {
+    text-align: center;
+  }
+  .footer-block__title,
+  .footer-block__extra-social-menu,
+  .footer-block__phone-number,
+  .footer-block__callback-btn {
+    display: none;
+  }
+  .footer-block__social-links {
+    margin-bottom: 1rem;
+  }
+  .footer-block__callback-btn-adapt {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--bg-color);
+    border: 0.0625rem solid var(--font-color);
+    cursor: pointer;
+    padding: 0.625rem 1.875rem;
+  }
+  .footer-block__callback-btn-adapt:hover {
+    background: var(--bg-sec-color);
+    border: 0.0625rem solid var(--bg-sec-color);
+  }
+  .footer-block__callback-btn-adapt > label {
+    font-family: var(--font-fm);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--font-color);
+  }
+}

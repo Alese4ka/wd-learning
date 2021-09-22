@@ -7,7 +7,8 @@ header {
 .second-block,
 .third-block,
 .fourth-block,
-.fifth-block {
+.fifth-block,
+.footer-block {
   max-width: 82rem;
   margin: 0 auto;
 }
