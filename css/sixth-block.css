@@ -138,8 +138,19 @@ select option[disabled="disabled"] {
 .sixth-block__form-services > h6 {
   margin-right: 0.625rem;
 }
-.sixth-block__form-services > div {
+.sixth-block__form-services > p {
   cursor: pointer;
+  margin-top: 0.5rem;
+}
+i {
+  border: solid var(--font-color);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 5px;
+}
+.sixth-block__form-services__arrow {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
 }
 .sixth-block__form-services__list {
   display: flex;
