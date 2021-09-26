@@ -222,7 +222,7 @@ i {
 }
 .sixth-block__form-time__main-button {
   background: #ff352b;
-  padding: 1rem 5.9375rem 0.9375rem 6rem;
+  padding: 1rem 0 0.9375rem 0;
   box-shadow: 0.625rem 0.625rem 0 -0.125rem var(--bg-sec-color),
     0.625rem 0.625rem 0 0 var(--bg-color);
   margin: 1.25rem 0 1.4788rem 0;
@@ -240,8 +240,8 @@ i {
   font-family: var(--font-fm);
   font-style: normal;
   font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 1.8125rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
   color: #f2f2f2;
   cursor: pointer;
 }
