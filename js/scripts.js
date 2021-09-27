@@ -178,3 +178,14 @@ Share = {
     window.open(url,'','toolbar=0,status=0,width=626,height=436');
   }
 };
+
+/*Burger menu*/
+const burger = document.querySelector('.header-block__hamburger-menu');
+const firstBlock = document.querySelector('.first-block');
+
+burger.addEventListener('click', function(){
+  document.querySelector('.header-block__hamburger-menu span').classList.toggle('active');
+  document.querySelector('.header-block__hamburger-main-menu').classList.toggle('animate');
+})
+
+
