@@ -324,106 +324,111 @@
 				</button>
 			</div>
 		</section>
+
 		<section class="sixth-wrapper">
 			<div class="sixth-block">
-				<h2 class="sixth-block__title">Закажи переезд прямо сейчас со скидкой %</h2>
-				<h2 class="sixth-block__title-adapt">Закажи переезд прямо сейчас</h2>
-				<p>Мы перезвоним в течении 10 секунд</p>
-				<div class="sixth-block__form-contact">
-					<input type="text" name="name" placeholder="Ваше имя" size="32">
-					<input type="tel" name="tel" placeholder="Телефон" size="32">
-				</div>
-				<div class="sixth-block__form-region">
-					<h6 class="sixth-block__form-region-title">Укажите область</h6>
-					<h6>Укажите город</h6>
-				</div>
-				<div class="sixth-block__form-region-select">
-					<select name="select">
-						<option value="" default disabled selected>Например: Минская</option>
-						<option value="value1">Витебская</option>
-						<option value="value3">Брестсткая</option>
-						<option value="value3">Гомельская</option>
-						<option value="value2">Гродненская</option>
-						<option value="value2">Минская</option>
-						<option value="value1">Могилевская</option>
-					</select>
-					<select name="select">
-						<option value="value1">Мозырь</option>
-						<option value="value3">Минск</option>
-						<option value="value3">Брест</option>
-						<option value="value2">Гродно</option>
-						<option value="value2">Гомель</option>
-						<option value="value1">Витебск</option>
-					</select>
-				</div>
-				<h6 class="sixth-block__form-money">Способ оплаты</h6>
-				<div class="sixth-block__form-money-list">
-					<p>
-						<input type="radio" id="radio-money-one" name="radio" checked>
-						<label class="sixth-block__form-money-list__item" for="radio-money-one">
-							<p class="sixth-block__form-money-list__item-p">Наличными курьеру</p>
-						</label>
-					</p>
-					<p>
-						<input type="radio" id="radio-money-two" name="radio">
-						<label class="sixth-block__form-money-list__item" for="radio-money-two">
-							<p class="sixth-block__form-money-list__item-p">Картой курьеру</p>
-						</label>
-					</p>
-					<p>
-						<input type="radio" id="radio-three" name="radio">
-						<label class="sixth-block__form-money-list__item" for="radio-money-three">
-							<p class="sixth-block__form-money-list__item-p">Банковский перевод</p>
-						</label>
-					</p>
-				</div>
-				<div class="sixth-block__form-services">
-					<h6>Дополнительные услуги</h6>
-					<p>
-						<i class="sixth-block__form-services__arrow"></i>
-					</p>
-				</div>
-				<div class="sixth-block__form-services__list">
-					<p>
-						<input type="checkbox" id="service-one" name="service">
-						<label class="sixth-block__form-services__list-label" for="service-one">Вызов замерщика</label>
-					</p>
-					<p>
-						<input type="checkbox" id="service-two" name="service">
-						<label class="sixth-block__form-services__list-label" for="service-two">Упаковка для хрупких
-							предметов</label>
-					</p>
-					<p>
-						<input type="checkbox" id="service-three" name="service">
-						<label class="sixth-block__form-services__list-label" for="service-three">Кран</label>
-					</p>
-					<p>
-						<input type="checkbox" id="service-four" name="service">
-						<label class="sixth-block__form-services__list-label" for="service-four">Сборка мебели</label>
-					</p>
-					<p>
-						<input type="checkbox" id="service-five" name="service">
-						<label class="sixth-block__form-services__list-label" for="service-five">Крупногабаритные предметы</label>
-					</p>
-				</div>
-				<div class="sixth-block__form-time">
-					<time>5:37:25</time>
-					<div class="sixth-block__form-time__button">
-						<button class="sixth-block__form-time__main-button">
-							<label>Заказать со скидкой</label>
-						</button>
-						<button class="sixth-block__form-time__button-adapt">
-							<label>Перезвонить мне</label>
-						</button>
-						<div class="sixth-block__form-time__agree">
-							<p>
-								<input type="checkbox" id="agree" name="agree">
-								<label class="sixth-block__form-time__agree-label" for="agree">Даю согласие на обработку данных</label>
-							</p>
+				<form class="sixth-block__form-order">
+					<h2 class="sixth-block__title">Закажи переезд прямо сейчас со скидкой %</h2>
+					<h2 class="sixth-block__title-adapt">Закажи переезд прямо сейчас</h2>
+					<p>Мы перезвоним в течении 10 секунд</p>
+					<div class="sixth-block__form-contact">
+						<input type="text" name="name" placeholder="Ваше имя" size="32"
+							class="sixth-block__form-contact__name field">
+						<input type="tel" name="tel" placeholder="Телефон" size="32" class="sixth-block__form-contact__tel field">
+					</div>
+					<div class="sixth-block__form-region">
+						<h6 class="sixth-block__form-region-title">Укажите область</h6>
+						<h6>Укажите город</h6>
+					</div>
+					<div class="sixth-block__form-region-select">
+						<select name="select">
+							<option value="" default disabled selected>Например: Минская</option>
+							<option value="value1">Витебская</option>
+							<option value="value3">Брестсткая</option>
+							<option value="value3">Гомельская</option>
+							<option value="value2">Гродненская</option>
+							<option value="value2">Минская</option>
+							<option value="value1">Могилевская</option>
+						</select>
+						<select name="select">
+							<option value="value1">Мозырь</option>
+							<option value="value3">Минск</option>
+							<option value="value3">Брест</option>
+							<option value="value2">Гродно</option>
+							<option value="value2">Гомель</option>
+							<option value="value1">Витебск</option>
+						</select>
+					</div>
+					<h6 class="sixth-block__form-money">Способ оплаты</h6>
+					<div class="sixth-block__form-money-list">
+						<p>
+							<input type="radio" id="radio-money-one" name="radio" checked>
+							<label class="sixth-block__form-money-list__item" for="radio-money-one">
+								<p class="sixth-block__form-money-list__item-p">Наличными курьеру</p>
+							</label>
+						</p>
+						<p>
+							<input type="radio" id="radio-money-two" name="radio">
+							<label class="sixth-block__form-money-list__item" for="radio-money-two">
+								<p class="sixth-block__form-money-list__item-p">Картой курьеру</p>
+							</label>
+						</p>
+						<p>
+							<input type="radio" id="radio-money-three" name="radio">
+							<label class="sixth-block__form-money-list__item" for="radio-money-three">
+								<p class="sixth-block__form-money-list__item-p">Банковский перевод</p>
+							</label>
+						</p>
+					</div>
+					<div class="sixth-block__form-services">
+						<h6>Дополнительные услуги</h6>
+						<p>
+							<i class="sixth-block__form-services__arrow"></i>
+						</p>
+					</div>
+					<div class="sixth-block__form-services__list">
+						<p>
+							<input type="checkbox" id="service-one" name="service">
+							<label class="sixth-block__form-services__list-label" for="service-one">Вызов замерщика</label>
+						</p>
+						<p>
+							<input type="checkbox" id="service-two" name="service">
+							<label class="sixth-block__form-services__list-label" for="service-two">Упаковка для хрупких
+								предметов</label>
+						</p>
+						<p>
+							<input type="checkbox" id="service-three" name="service">
+							<label class="sixth-block__form-services__list-label" for="service-three">Кран</label>
+						</p>
+						<p>
+							<input type="checkbox" id="service-four" name="service">
+							<label class="sixth-block__form-services__list-label" for="service-four">Сборка мебели</label>
+						</p>
+						<p>
+							<input type="checkbox" id="service-five" name="service">
+							<label class="sixth-block__form-services__list-label" for="service-five">Крупногабаритные предметы</label>
+						</p>
+					</div>
+					<div class="sixth-block__form-time">
+						<time id="timer">6:00:00</time>
+						<div class="sixth-block__form-time__button">
+							<input type="submit" class="sixth-block__form-time__main-button" value="Заказать со скидкой">
+							<button class="sixth-block__form-time__button-adapt">
+								<label>Перезвонить мне</label>
+							</button>
+							<div class="sixth-block__form-time__agree">
+								<p>
+									<input type="checkbox" id="agree" name="agree">
+									<label class="sixth-block__form-time__agree-label" for="agree">Даю согласие на обработку
+										данных</label>
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
+			</div>
+			</form>
 		</section>
+
 		<section class="seventh-wrapper">
 			<div class="seventh-block">
 				<iframe
