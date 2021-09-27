@@ -48,9 +48,6 @@
 .sixth-block__form-contact > input::placeholder {
   color: rgba(51, 51, 51, 0.7);
 }
-.sixth-block__form-contact > input:required {
-  border-color: #ff352b;
-}
 .sixth-block__form-region {
   display: flex;
   justify-content: flex-start;
@@ -87,8 +84,25 @@ select {
 option[default] {
   display: none;
 }
-select option[disabled="disabled"] {
-  color: green;
+.sixth-block__form-region-select__add {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.sixth-block__form-region-select__add > input {
+  width: 18.75rem;
+  font-family: var(--font-fm);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: var(--font-color);
+  padding-bottom: 0.875rem;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.7);
+}
+.sixth-block__form-region-select__add > input::placeholder {
+  color: rgba(51, 51, 51, 0.7);
 }
 .sixth-block__form-money {
   margin-bottom: 2rem;

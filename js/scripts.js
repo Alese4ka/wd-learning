@@ -114,16 +114,36 @@ const phone = form.querySelector('.sixth-block__form-contact__tel');
 form.addEventListener('submit', function(event){
   event.preventDefault();
 
-    if (!login.value) {
-      login.style.border = '1px solid #ff352b';
+  if (!login.value) {
+    login.style.border = '1px solid #ff352b';
+  }
+  if (!phone.value) {
+    phone.style.border = '1px solid #ff352b';
+  }
+  if (login.value) {
+    login.style.border = '1px solid green';
+  }
+  if (phone.value) {
+    phone.style.border = '1px solid green';
+  }
+})
+
+/*Add option*/
+const selectList = document.querySelector('#select');
+const newOption = document.querySelector('#name');
+
+newOption.addEventListener('keyup', function(e) {
+  e.preventDefault();
+
+  if (e.keyCode === 13) {
+    if (newOption.value == '') {
+      alert('Введите город');
+      return;
     }
-    if (!phone.value) {
-      phone.style.border = '1px solid #ff352b';
-    }
-    if (login.value) {
-      login.style.border = '1px solid green';
-    }
-    if (phone.value) {
-      phone.style.border = '1px solid green';
-    }
+    
+    const option = new Option(newOption.value, newOption.value);
+    selectList.add(option, undefined);
+    newOption.value = '';
+    newOption.focus();
+  }   
 })
