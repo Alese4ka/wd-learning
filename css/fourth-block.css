@@ -248,7 +248,7 @@
   }
   .fourth-block__cars__description__pic {
     display: block;
-    margin: 0 auto;
+    margin: 0;
     width: 90%;
   }
   .fourth-block__cars__description {
