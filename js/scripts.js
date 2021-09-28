@@ -1,3 +1,4 @@
+/*Hide block and slider*/
 const arrowUp = document.querySelector('.sixth-block__form-services__arrow');
 const servicesList = document.querySelector('.sixth-block__form-services__list');
 const arrowLeft = document.querySelector('.fourth-block__cars__description__arrow-left')
@@ -17,65 +18,65 @@ carBtnTwo.addEventListener('click', () => changeSlideTwo());
 carBtnThree.addEventListener('click', () => changeSlideThree());
 
 function blockHide () {
-  if(servicesList.style.display == `none`) {
-    servicesList.style.display = `flex`;
+  if(servicesList.style.display == 'none') {
+    servicesList.style.display = 'flex';
   }
   else {
-    servicesList.style.display = `none`;
+    servicesList.style.display = 'none';
   }
 }
 
 function changeSlideLeft () {
-  if(carOne.style.display == `flex`){
-    carOne.style.display = `none`;
-    carThree.style.display = `flex`;
+  if(carOne.style.display == 'flex'){
+    carOne.style.display = 'none';
+    carThree.style.display = 'flex';
   }
-  else if (carThree.style.display == `flex`) {
-    carThree.style.display = `none`;
-    carTwo.style.display = `flex`;
+  else if (carThree.style.display == 'flex') {
+    carThree.style.display = 'none';
+    carTwo.style.display = 'flex';
   }
   else {
-    carTwo.style.display = `none`;
-    carOne.style.display = `flex`;
+    carTwo.style.display = 'none';
+    carOne.style.display = 'flex';
   }
 }
 
 function changeSlideRight () {
-  if(carOne.style.display == `flex`){
-    carOne.style.display = `none`;
-    carTwo.style.display = `flex`;
+  if(carOne.style.display == 'flex'){
+    carOne.style.display = 'none';
+    carTwo.style.display = 'flex';
   }
-  else if (carTwo.style.display == `flex`) {
-    carTwo.style.display = `none`;
-    carThree.style.display = `flex`;
+  else if (carTwo.style.display == 'flex') {
+    carTwo.style.display = 'none';
+    carThree.style.display = 'flex';
   }
   else {
-    carThree.style.display = `none`;
-    carOne.style.display = `flex`;
+    carThree.style.display = 'none';
+    carOne.style.display = 'flex';
   }
 }
 
 function changeSlideOne () {
-  if(carTwo.style.display == `flex` || carThree.style.display == `flex`){
-    carOne.style.display = `flex`;
-    carTwo.style.display = `none`;
-    carThree.style.display = `none`;
+  if(carTwo.style.display == 'flex' || carThree.style.display == 'flex'){
+    carOne.style.display = 'flex';
+    carTwo.style.display = 'none';
+    carThree.style.display = 'none';
   }
 }  
 
 function changeSlideTwo () {
-  if(carOne.style.display == `flex` || carThree.style.display == `flex`){
-    carTwo.style.display = `flex`;
-    carOne.style.display = `none`;
-    carThree.style.display = `none`;
+  if(carOne.style.display == 'flex' || carThree.style.display == 'flex'){
+    carTwo.style.display = 'flex';
+    carOne.style.display = 'none';
+    carThree.style.display = 'none';
   }
 }  
 
 function changeSlideThree () {
-  if(carTwo.style.display == `flex` || carOne.style.display == `flex`){
-    carThree.style.display = `flex`;
-    carTwo.style.display = `none`;
-    carOne.style.display = `none`;
+  if(carTwo.style.display == 'flex' || carOne.style.display == 'flex'){
+    carThree.style.display = 'flex';
+    carTwo.style.display = 'none';
+    carOne.style.display = 'none';
   }
 }  
 
@@ -92,11 +93,11 @@ function startTimer() {
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("timer").innerHTML = hours + ":" + minutes + ":" + seconds;
+    document.getElementById('timer').innerHTML = hours + ':' + minutes + ':' + seconds;
 
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("timer").innerHTML = "Время вышло";
+      document.getElementById('timer').innerHTML = 'Время вышло';
     }
   }, 1000);
 }
@@ -128,19 +129,12 @@ form.addEventListener('submit', function(event){
   }
 })
 
-/*Add option*/
+/*Add option !!!!!READ*/
 const selectList = document.querySelector('#select');
 const newOption = document.querySelector('#name');
 
 newOption.addEventListener('keyup', function(e) {
-  e.preventDefault();
-
   if (e.keyCode === 13) {
-    if (newOption.value == '') {
-      alert('Введите город');
-      return;
-    }
-    
     const option = new Option(newOption.value, newOption.value);
     selectList.add(option, undefined);
     newOption.value = '';
@@ -160,7 +154,7 @@ Share = {
     Share.popup(url);
   },
   facebook: function(purl, ptitle, pimg, text) {
-    url  = 'http://www.facebook.com/sharer.php?s=100';
+    url  = 'http://www.facebook.com/sharer.php?';
     url += '&p[title]='     + encodeURIComponent(ptitle);
     url += '&p[summary]='   + encodeURIComponent(text);
     url += '&p[url]='       + encodeURIComponent(purl);
