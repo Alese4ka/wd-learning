@@ -219,7 +219,7 @@ i {
 /*Time*/
 .sixth-block__form-time {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
 }
 .sixth-block__form-time > time {
@@ -253,7 +253,7 @@ i {
   transform: translate(0.625rem, 0.625rem);
   transition: 0.5s;
 }
-.sixth-block__form-time__main-button > label {
+.sixth-block__form-time__main-button {
   font-family: var(--font-fm);
   font-style: normal;
   font-weight: 600;

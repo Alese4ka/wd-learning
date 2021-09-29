@@ -82,20 +82,21 @@ header {
   .header-block {
     margin-left: 1rem;
     padding-top: 0;
+    margin-top: 0;
   }
   .header-block__logo {
     font-size: 1.4375rem;
     line-height: 1.8125rem;
-    margin-top: 2.1rem;
+    margin-top: 3.6rem;
   }
   .header-block__hamburger-menu__button {
-    position: fixed;
     background-color: rgba(254, 209, 0, 0.9);
+    position: fixed;
     border-radius: 50%;
-    top: 1.65rem;
+    top: 2.57rem;
     right: 1.25rem;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     z-index: 30;
   }
@@ -103,7 +104,7 @@ header {
   .header-block__hamburger-menu__lines::before,
   .header-block__hamburger-menu__lines::after {
     position: absolute;
-    width: 20px;
+    width: 40px;
     height: 0.115rem;
     background-color: var(--font-color);
   }
@@ -135,7 +136,7 @@ header {
     display: none;
   }
   .header-block__hamburger-main-menu {
-    padding-top: 2rem;
+    padding: 4rem;
     position: fixed;
     z-index: 20;
     display: flex;
@@ -182,5 +183,14 @@ header {
   .header-block__main-menu,
   .header-block__phone-number {
     display: none;
+  }
+  .header-block__hamburger-menu__button {
+    width: 40px;
+    height: 40px;
+  }
+  .header-block__hamburger-menu__lines,
+  .header-block__hamburger-menu__lines::before,
+  .header-block__hamburger-menu__lines::after {
+    width: 30px;
   }
 }
