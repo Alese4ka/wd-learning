@@ -1,6 +1,19 @@
-/*Hide block and slider*/
+/*Hide block*/
 const arrowUp = document.querySelector('.sixth-block__form-services__arrow');
 const servicesList = document.querySelector('.sixth-block__form-services__list');
+
+arrowUp.addEventListener('click', () => blockHide());
+
+function blockHide() {
+  if(servicesList.style.display == 'none') {
+    servicesList.style.display = 'flex';
+  }
+  else {
+    servicesList.style.display = 'none';
+  }
+}
+
+/*Slider*/
 const arrowLeft = document.querySelector('.fourth-block__cars__description__arrow-left')
 const arrowRight = document.querySelector('.fourth-block__cars__description__arrow-right')
 const carOne = document.querySelector('.fourth-block__cars__description-one')
@@ -10,23 +23,13 @@ const carBtnOne = document.querySelector('.fourth-block__cars-button-one');
 const carBtnTwo = document.querySelector('.fourth-block__cars-button-two');
 const carBtnThree = document.querySelector('.fourth-block__cars-button-three');
 
-arrowUp.addEventListener('click', () => blockHide());
 arrowLeft.addEventListener('click', () => changeSlideLeft());
 arrowRight.addEventListener('click', () => changeSlideRight());
 carBtnOne.addEventListener('click', () => changeSlideOne());
 carBtnTwo.addEventListener('click', () => changeSlideTwo());
 carBtnThree.addEventListener('click', () => changeSlideThree());
 
-function blockHide () {
-  if(servicesList.style.display == 'none') {
-    servicesList.style.display = 'flex';
-  }
-  else {
-    servicesList.style.display = 'none';
-  }
-}
-
-function changeSlideLeft () {
+function changeSlideLeft() {
   if(carOne.style.display == 'flex'){
     carOne.style.display = 'none';
     carThree.style.display = 'flex';
@@ -41,7 +44,7 @@ function changeSlideLeft () {
   }
 }
 
-function changeSlideRight () {
+function changeSlideRight() {
   if(carOne.style.display == 'flex'){
     carOne.style.display = 'none';
     carTwo.style.display = 'flex';
@@ -56,7 +59,7 @@ function changeSlideRight () {
   }
 }
 
-function changeSlideOne () {
+function changeSlideOne() {
   if(carTwo.style.display == 'flex' || carThree.style.display == 'flex'){
     carOne.style.display = 'flex';
     carTwo.style.display = 'none';
@@ -64,7 +67,7 @@ function changeSlideOne () {
   }
 }  
 
-function changeSlideTwo () {
+function changeSlideTwo() {
   if(carOne.style.display == 'flex' || carThree.style.display == 'flex'){
     carTwo.style.display = 'flex';
     carOne.style.display = 'none';
@@ -72,7 +75,7 @@ function changeSlideTwo () {
   }
 }  
 
-function changeSlideThree () {
+function changeSlideThree() {
   if(carTwo.style.display == 'flex' || carOne.style.display == 'flex'){
     carThree.style.display = 'flex';
     carTwo.style.display = 'none';
@@ -129,7 +132,7 @@ form.addEventListener('submit', function(event){
   }
 })
 
-/*Add option !!!!!READ*/
+/*Add option*/
 const selectList = document.querySelector('#select');
 const newOption = document.querySelector('#name');
 
@@ -189,3 +192,40 @@ function menuShowHide() {
   burgerMenuOverlay.classList.toggle('animate');
 }
 
+/*Full reviews*/
+const reviewBtnOne = document.querySelector('.fifth-block__open-reviews-one');
+const reviewBtnTwo = document.querySelector('.fifth-block__open-reviews-two');
+const reviewBtnThree = document.querySelector('.fifth-block__open-reviews-three');
+const reviewBlockOne = document.querySelector('.fifth-block__text-reviews-full-one');
+const reviewBlockTwo = document.querySelector('.fifth-block__text-reviews-full-two');
+const reviewBlockThree = document.querySelector('.fifth-block__text-reviews-full-three');
+const hideBlockOne = document.querySelector('.fifth-block__text-reviews-one');
+const hideBlockTwo = document.querySelector('.fifth-block__text-reviews-two');
+const hideBlockThree = document.querySelector('.fifth-block__text-reviews-three');
+
+reviewBtnOne.addEventListener('click', () => openReview('one'));
+reviewBtnTwo.addEventListener('click', () => openReview('two'));
+reviewBtnThree.addEventListener('click', () => openReview('three'));
+
+function openReview(number) {
+  if (number === 'one'){
+    reviewBlockOne.classList.toggle('show');
+    hideBlockOne.classList.toggle('hidden');
+  }
+  else if (number === 'two'){
+    reviewBlockTwo.classList.toggle('show');
+    hideBlockTwo.classList.toggle('hidden');
+  }
+  else if (number === 'three'){
+    reviewBlockThree.classList.toggle('show');
+    hideBlockThree.classList.toggle('hidden');
+  }
+}
+
+const textReviewBtn = document.querySelectorAll('div > span');
+
+for (let i = 0; i < textReviewBtn.length; i++) {
+  textReviewBtn[i].addEventListener('click', function() {
+    this.innerHTML = (this.innerHTML === 'Читать полностью') ? this.innerHTML = 'Скрыть отзыв' : this.innerHTML = 'Читать полностью';
+  })
+}

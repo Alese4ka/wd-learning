@@ -8,7 +8,6 @@
 .fifth-block > div {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   flex-wrap: no-wrap;
   margin-bottom: 3.75rem;
 }
@@ -31,13 +30,23 @@
 .fifth-block > div > div > p {
   margin-bottom: 1.1875rem;
 }
-.fifth-block__text-reviews {
+.fifth-block__text-reviews-one,
+.fifth-block__text-reviews-two,
+.fifth-block__text-reviews-three,
+.fifth-block__text-reviews-full-one,
+.fifth-block__text-reviews-full-two,
+.fifth-block__text-reviews-full-three {
   font-family: var(--font-fm);
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
   line-height: 1.3125rem;
   color: var(--font-color);
+}
+.fifth-block__text-reviews-full-one,
+.fifth-block__text-reviews-full-two,
+.fifth-block__text-reviews-full-three {
+  display: none;
 }
 .fifth-block > div > div > span {
   font-family: var(--font-fm);
@@ -71,6 +80,13 @@
 }
 .fifth-block > button > label:hover {
   font-weight: bold;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+  width: 350px;
 }
 /*Adaptive*/
 @media (max-width: 73.75rem) {
