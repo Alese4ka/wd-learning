@@ -55,7 +55,7 @@ function changeSlides(btn) {
   else if(btn === 'two'){
     carTwo.style.display = 'flex';
     carOne.style.display = 'none';
-    carThree.style.display = 'none';
+    carThree.style.display = 'none';  
   }
   else if(btn === 'three'){
     carThree.style.display = 'flex';

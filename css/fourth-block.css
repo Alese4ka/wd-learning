@@ -10,7 +10,9 @@
   align-items: center;
   margin-bottom: 3.75rem;
 }
-.fourth-block__cars-button > div {
+.fourth-block__cars-button-one,
+.fourth-block__cars-button-two,
+.fourth-block__cars-button-three {
   background: var(--bg-sec-color);
   margin-right: 1.25rem;
   border: 0.0625rem solid #ebebeb;
