@@ -58,8 +58,9 @@ footer {
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.5rem;
-
-  text-decoration: underline;
+  border-bottom: 0.0625rem solid var(--font-color);
+  width: 10.5rem;
+  align-self: center;
   margin-bottom: 2rem;
 }
 .footer-block__email > a {
@@ -118,8 +119,9 @@ footer {
   font-size: 1.25rem;
   line-height: 1.5rem;
   color: var(--font-color);
-  text-decoration: underline;
-  text-align: center;
+  border-bottom: 0.0625rem solid var(--font-color);
+  width: 10.2rem;
+  align-self: center;
   margin-top: 0.9375rem;
 }
 .footer-block__phone-number:hover {
