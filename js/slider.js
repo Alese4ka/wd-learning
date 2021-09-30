@@ -1,69 +1,65 @@
 /*Slider*/
-const arrowLeft = document.querySelector('.fourth-block__cars__description__arrow-left')
-const arrowRight = document.querySelector('.fourth-block__cars__description__arrow-right')
-const carOne = document.querySelector('.fourth-block__cars__description-one')
-const carTwo = document.querySelector('.fourth-block__cars__description-two')
-const carThree = document.querySelector('.fourth-block__cars__description-three')
+const arrowLeft = document.querySelector('.fourth-block__cars__description__arrow-left');
+const arrowRight = document.querySelector('.fourth-block__cars__description__arrow-right');
+const carOne = document.querySelector('.fourth-block__cars__description-one');
+const carTwo = document.querySelector('.fourth-block__cars__description-two');
+const carThree = document.querySelector('.fourth-block__cars__description-three');
 const carBtnOne = document.querySelector('.fourth-block__cars-button-one');
 const carBtnTwo = document.querySelector('.fourth-block__cars-button-two');
 const carBtnThree = document.querySelector('.fourth-block__cars-button-three');
 
-arrowLeft.addEventListener('click', () => changeSlideLeft());
-arrowRight.addEventListener('click', () => changeSlideLeft());
-carBtnOne.addEventListener('click', () => changeSlideOne());
-carBtnTwo.addEventListener('click', () => changeSlideTwo());
-carBtnThree.addEventListener('click', () => changeSlideThree());
+arrowLeft.addEventListener('click', () => previousSlide());
+arrowRight.addEventListener('click', () => nextSlide());
+carBtnOne.addEventListener('click', () => changeSlides('one'));
+carBtnTwo.addEventListener('click', () => changeSlides('two'));
+carBtnThree.addEventListener('click', () => changeSlides('three'));
 
-function changeSlideLeft() {
-  if(carOne.style.display == 'flex'){
-    carOne.style.display = 'none';
-    carThree.style.display = 'flex';
-  }
-  else if (carThree.style.display == 'flex') {
-    carThree.style.display = 'none';
-    carTwo.style.display = 'flex';
-  }
-  else {
-    carTwo.style.display = 'none';
-    carOne.style.display = 'flex';
-  }
+let slideIndex = 1;
+
+function nextSlide() {
+    showSlides(slideIndex += 1);
 }
 
-function changeSlideRight() {
-  if(carOne.style.display == 'flex'){
-    carOne.style.display = 'none';
-    carTwo.style.display = 'flex';
-  }
-  else if (carTwo.style.display == 'flex') {
-    carTwo.style.display = 'none';
-    carThree.style.display = 'flex';
-  }
-  else {
-    carThree.style.display = 'none';
-    carOne.style.display = 'flex';
-  }
+function previousSlide() {
+    showSlides(slideIndex -= 1);  
 }
 
-function changeSlideOne() {
-  if(carTwo.style.display == 'flex' || carThree.style.display == 'flex'){
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let slides = document.querySelectorAll(".slider");
+  
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.length
+  }
+  
+  for (let slide of slides) {
+    slide.style.display = "none";
+  }
+  
+  slides[slideIndex - 1].style.display = "flex";    
+}
+
+
+function changeSlides(btn) {
+  if(btn === 'one'){
     carOne.style.display = 'flex';
     carTwo.style.display = 'none';
     carThree.style.display = 'none';
   }
-}  
-
-function changeSlideTwo() {
-  if(carOne.style.display == 'flex' || carThree.style.display == 'flex'){
+  else if(btn === 'two'){
     carTwo.style.display = 'flex';
     carOne.style.display = 'none';
     carThree.style.display = 'none';
   }
-}  
-
-function changeSlideThree() {
-  if(carTwo.style.display == 'flex' || carOne.style.display == 'flex'){
+  else if(btn === 'three'){
     carThree.style.display = 'flex';
     carTwo.style.display = 'none';
     carOne.style.display = 'none';
   }
-}  
+} 

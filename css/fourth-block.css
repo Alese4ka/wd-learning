@@ -42,8 +42,13 @@
 .fourth-block__cars__description-three {
   display: none;
 }
-.fourth-block__cars__description > p {
-  margin-bottom: 8rem;
+.fourth-block__slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fourth-block__slider > p {
+  margin-bottom: 7.5rem;
 }
 .fourth-block__cars__description__arrow-left,
 .fourth-block__cars__description__arrow-right {
