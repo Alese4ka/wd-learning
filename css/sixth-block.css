@@ -243,8 +243,28 @@ i {
   box-shadow: 0.625rem 0.625rem 0 -0.125rem var(--bg-sec-color),
     0.625rem 0.625rem 0 0 var(--bg-color);
   margin: 1.25rem 0 1.4788rem 0;
+  font-family: var(--font-fm);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #f2f2f2;
+  cursor: pointer;
 }
-.sixth-block__form-time__main-button:not(:hover) {
+.sixth-block__form-time__button-adapt {
+  background: #ff352b;
+  padding: 1rem 0 0.9375rem 0;
+  margin: 1.25rem 0 1.4788rem 0;
+  font-family: var(--font-fm);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+.sixth-block__form-time__main-button:not(:hover),
+.sixth-block__form-time__button-adapt:not(:hover) {
   transition: 1s;
 }
 .sixth-block__form-time__main-button:hover {
@@ -253,14 +273,9 @@ i {
   transform: translate(0.625rem, 0.625rem);
   transition: 0.5s;
 }
-.sixth-block__form-time__main-button {
-  font-family: var(--font-fm);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.25rem;
-  color: #f2f2f2;
-  cursor: pointer;
+.sixth-block__form-time__button-adapt:hover {
+  background: #ff772b;
+  transition: 0.5s;
 }
 .sixth-block__form-time__agree-label {
   font-family: var(--font-fm);
@@ -341,11 +356,17 @@ i {
     display: flex;
     flex-direction: column;
   }
+  .sixth-block__form-region-select__add {
+    display: none;
+  }
   .sixth-block__form-time__button-adapt {
     display: block;
-    background: #ff352b;
-    padding: 1.125rem 3.5rem 1.125rem 3.5rem;
-    margin-bottom: 0.875rem;
+    margin-top: 0;
+  }
+  .sixth-block__form-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .sixth-block__form-time__button-adapt:hover {
     background: #ff772b;
