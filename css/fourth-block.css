@@ -182,18 +182,17 @@
     content: "";
     background: url(/assets/svg/dot.svg) no-repeat center;
     display: inline-block;
-    width: 0.5rem;
-    height: 0.5rem;
+    width: 8px;
+    height: 8px;
     margin: 0.5rem 0.5rem 0.7rem 0.5rem;
-    color: transparent;
   }
   .fourth-block__cars__description__slider-adapt
     input[type="radio"]:checked
     + label:before {
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    border: 0.125rem solid var(--bg-color);
+    border: 2px solid var(--bg-color);
     background: url(/assets/svg/dot_big.svg) no-repeat center;
     margin: 0;
   }
@@ -293,7 +292,6 @@
     width: 8px;
     height: 8px;
     margin: 0.5rem 0.5rem 0.7rem 0.5rem;
-    color: transparent;
   }
   .fourth-block__cars__description__slider-adapt
     input[type="radio"]:checked

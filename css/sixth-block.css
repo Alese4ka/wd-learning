@@ -42,7 +42,7 @@
   font-size: 1rem;
   line-height: 1.25rem;
   color: var(--font-color);
-  padding-bottom: 0.875rem;
+  padding: 0.875rem 0 0.875rem 0.5rem;
   border-bottom: 0.0625rem solid rgba(51, 51, 51, 0.7);
 }
 .sixth-block__form-contact > input::placeholder {
@@ -155,9 +155,9 @@ option[default] {
 .sixth-block__form-services > h6 {
   margin-right: 0.625rem;
 }
-.sixth-block__form-services > p {
+.sixth-block__form-services-p {
   cursor: pointer;
-  margin-top: 0.5rem;
+  margin-top: 0.65rem;
 }
 i {
   border: solid var(--font-color);
@@ -168,6 +168,13 @@ i {
 .sixth-block__form-services__arrow {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
+}
+.hide-block {
+  margin-top: 0.15rem;
+}
+.hide-block-arrow {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 .sixth-block__form-services__list {
   display: flex;
