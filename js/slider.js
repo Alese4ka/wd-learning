@@ -14,38 +14,6 @@ carBtnOne.addEventListener('click', () => changeSlides('one'));
 carBtnTwo.addEventListener('click', () => changeSlides('two'));
 carBtnThree.addEventListener('click', () => changeSlides('three'));
 
-let slideIndex = 1;
-
-function nextSlide() {
-    showSlides(slideIndex += 1);
-}
-
-function previousSlide() {
-    showSlides(slideIndex -= 1);  
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let slides = document.querySelectorAll('.slider');
-  
-  if (n > slides.length) {
-    slideIndex = 1
-  }
-  if (n < 1) {
-    slideIndex = slides.length
-  }
-  
-  for (let slide of slides) {
-    slide.style.display = 'none';
-  }
-  
-  slides[slideIndex - 1].style.display = 'flex';    
-}
-
-
 function changeSlides(btn) {
   if(btn === 'one'){
     carOne.style.display = 'flex';
@@ -73,3 +41,37 @@ function changeSlides(btn) {
   }
 } 
 
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function nextSlide() {
+    showSlides(slideIndex += 1);
+}
+
+function previousSlide() {
+    showSlides(slideIndex -= 1);  
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.querySelectorAll('.slider');
+  let btnSlides = document.querySelectorAll('.slider-btn');
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.length
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
+  for (i = 0; i < btnSlides.length; i++) {
+    btnSlides[i].className = btnSlides[i].className.replace(' color-border', '');
+  }
+  slides[slideIndex - 1].style.display = 'flex';
+  btnSlides[slideIndex - 1].className += ' color-border';
+}
