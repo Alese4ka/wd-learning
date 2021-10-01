@@ -29,7 +29,7 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  let slides = document.querySelectorAll(".slider");
+  let slides = document.querySelectorAll('.slider');
   
   if (n > slides.length) {
     slideIndex = 1
@@ -39,10 +39,10 @@ function showSlides(n) {
   }
   
   for (let slide of slides) {
-    slide.style.display = "none";
+    slide.style.display = 'none';
   }
   
-  slides[slideIndex - 1].style.display = "flex";    
+  slides[slideIndex - 1].style.display = 'flex';    
 }
 
 
@@ -51,15 +51,25 @@ function changeSlides(btn) {
     carOne.style.display = 'flex';
     carTwo.style.display = 'none';
     carThree.style.display = 'none';
+    carBtnTwo.style.border = '0.0625rem solid #ebebeb';
+    carBtnThree.style.border = '0.0625rem solid #ebebeb';
+    carBtnOne.style.border = '0.0625rem solid #fed100';
   }
   else if(btn === 'two'){
     carTwo.style.display = 'flex';
     carOne.style.display = 'none';
     carThree.style.display = 'none';  
+    carBtnOne.style.border = '0.0625rem solid #ebebeb';
+    carBtnThree.style.border = '0.0625rem solid #ebebeb';
+    carBtnTwo.style.border = '0.0625rem solid #fed100';
   }
   else if(btn === 'three'){
     carThree.style.display = 'flex';
     carTwo.style.display = 'none';
     carOne.style.display = 'none';
+    carBtnTwo.style.border = '0.0625rem solid #ebebeb';
+    carBtnOne.style.border = '0.0625rem solid #ebebeb';
+    carBtnThree.style.border = '0.0625rem solid #fed100';
   }
 } 
+

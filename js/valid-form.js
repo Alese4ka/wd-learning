@@ -8,15 +8,15 @@ form.addEventListener('submit', function(event){
   event.preventDefault();
 
   if (!login.value) {
-    login.style.border = '1px solid #ff352b';
+    login.style.border = '0.0625rem solid #ff352b';
   }
   if (!phone.value) {
-    phone.style.border = '1px solid #ff352b';
+    phone.style.border = '0.0625rem solid #ff352b';
   }
   if (login.value) {
-    login.style.border = '1px solid green';
+    login.style.border = '0.0625rem solid green';
   }
   if (phone.value) {
-    phone.style.border = '1px solid green';
+    phone.style.border = '0.0625rem solid green';
   }
 })

@@ -11,11 +11,18 @@ function startTimer() {
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById('timer').innerHTML = hours + ':' + minutes + ':' + seconds;
-
-    if (distance < 0) {
+    if (minutes < 10) {
+      document.getElementById('timer').innerHTML = '0'+ hours + ':0' + minutes + ':' + seconds;
+    }
+    else if (seconds < 10) {
+      document.getElementById('timer').innerHTML = '0'+ hours + ':' + minutes + ':0' + seconds;
+    }
+    else if (distance < 0) {
       clearInterval(x);
       document.getElementById('timer').innerHTML = 'Время вышло';
+    }
+    else {
+      document.getElementById('timer').innerHTML = '0' + hours + ':' + minutes + ':' + seconds;
     }
   }, 1000);
 }

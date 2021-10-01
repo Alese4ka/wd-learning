@@ -43,7 +43,7 @@
   line-height: 1.25rem;
   color: var(--font-color);
   padding-bottom: 0.875rem;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.7);
+  border-bottom: 0.0625rem solid rgba(51, 51, 51, 0.7);
 }
 .sixth-block__form-contact > input::placeholder {
   color: rgba(51, 51, 51, 0.7);
@@ -79,7 +79,7 @@ select {
   color: var(--font-color);
   width: 18.75rem;
   padding-bottom: 0.875rem;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.7);
+  border-bottom: 0.0625rem solid rgba(51, 51, 51, 0.7);
 }
 option[default] {
   display: none;
@@ -99,7 +99,7 @@ option[default] {
   line-height: 1.25rem;
   color: var(--font-color);
   padding-bottom: 0.875rem;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.7);
+  border-bottom: 0.0625rem solid rgba(51, 51, 51, 0.7);
 }
 .sixth-block__form-region-select__add > input::placeholder {
   color: rgba(51, 51, 51, 0.7);
