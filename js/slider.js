@@ -8,8 +8,13 @@ const carBtnOne = document.querySelector('.fourth-block__cars-button-one');
 const carBtnTwo = document.querySelector('.fourth-block__cars-button-two');
 const carBtnThree = document.querySelector('.fourth-block__cars-button-three');
 
+let mediaQuery = window.matchMedia('(min-width: 1211px)');
+
 arrowLeft.addEventListener('click', () => previousSlide());
 arrowRight.addEventListener('click', () => nextSlide());
+carBtnOne.addEventListener('click', () => changeSlides('one'));
+carBtnTwo.addEventListener('click', () => changeSlides('two'));
+carBtnThree.addEventListener('click', () => changeSlides('three'));
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -30,26 +35,44 @@ function showSlides(n) {
   let i;
   let slides = document.querySelectorAll('.slider');
   let btnSlides = document.querySelectorAll('.slider-btn');
-  if (n > slides.length) {
-    slideIndex = 1
+  let dots = document.querySelectorAll('.dot');
+  if (mediaQuery.matches) {
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+     slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none';
+    }
+    for (i = 0; i < btnSlides.length; i++) {
+      btnSlides[i].className = btnSlides[i].className.replace(' color-border', '');
+    }
+    slides[slideIndex - 1].style.display = 'flex';
+    btnSlides[slideIndex - 1].className += ' color-border';
   }
-  if (n < 1) {
-    slideIndex = slides.length
+  else {
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+      slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none';
+    }
+    for (i = 0; i < btnSlides.length; i++) {
+      btnSlides[i].className = btnSlides[i].className.replace(' color-border-down', '');
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(' color-border-down', '');
+    }
+    slides[slideIndex - 1].style.display = 'flex';
+    btnSlides[slideIndex - 1].className += ' color-border-down';
+    dots[slideIndex - 1].className += ' color-border-down';
   }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
-  }
-  for (i = 0; i < btnSlides.length; i++) {
-    btnSlides[i].className = btnSlides[i].className.replace(' color-border', '');
-  }
-  slides[slideIndex - 1].style.display = 'flex';
-  btnSlides[slideIndex - 1].className += ' color-border';
 }
-
-let mediaQuery = window.matchMedia('(min-width: 1211px)');
-carBtnOne.addEventListener('click', () => changeSlides('one'));
-carBtnTwo.addEventListener('click', () => changeSlides('two'));
-carBtnThree.addEventListener('click', () => changeSlides('three'));
 
 function changeSlides(btn) {
   if (mediaQuery.matches) {

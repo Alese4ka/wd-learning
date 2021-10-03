@@ -9,6 +9,7 @@ burgerMenu.addEventListener('click', () => menuShowHide());
 burgerMenuOverlay.addEventListener('click', () => menuShowHide());
   
 function menuShowHide() {
+  burgerBtn.classList.toggle('active');
   burgerLinesMenu.classList.toggle('active');
   burgerMenu.classList.toggle('animate');
   burgerMenuOverlay.classList.toggle('animate');

@@ -98,6 +98,7 @@ header {
     height: 50px;
     cursor: pointer;
     z-index: 30;
+    background-color: rgba(254, 209, 0, 0.8);
   }
   .header-block__hamburger-menu__lines,
   .header-block__hamburger-menu__lines::before,
@@ -119,6 +120,9 @@ header {
   .header-block__hamburger-menu__lines::after {
     content: "";
     top: 0.5rem;
+  }
+  .header-block__hamburger-menu__button.active {
+    background-color: #3f3f3f;
   }
   .header-block__hamburger-menu__lines.active {
     background-color: transparent;
