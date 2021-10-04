@@ -11,7 +11,6 @@
 }
 .sixth-block__title {
   font-family: var(--font-fm);
-  font-style: normal;
   font-weight: 600;
   font-size: 1.875rem;
   line-height: 2.3125rem;
@@ -21,8 +20,6 @@
 }
 .sixth-block > form > p {
   font-family: var(--font-fm);
-  font-style: normal;
-  font-weight: normal;
   font-size: 1rem;
   line-height: 1.3125rem;
   color: var(--font-color);
@@ -37,7 +34,6 @@
 }
 .sixth-block__form-contact > input {
   font-family: var(--font-fm);
-  font-style: normal;
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.25rem;
@@ -56,7 +52,6 @@
 }
 h6 {
   font-family: var(--font-fm);
-  font-style: normal;
   font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -72,7 +67,6 @@ h6 {
 }
 select {
   font-family: var(--font-fm);
-  font-style: normal;
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.25rem;
@@ -93,7 +87,6 @@ option[default] {
 .sixth-block__form-region-select__add > input {
   width: 18.75rem;
   font-family: var(--font-fm);
-  font-style: normal;
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.25rem;
@@ -114,8 +107,6 @@ option[default] {
 }
 .sixth-block__form-money-list__item-p {
   font-family: var(--font-fm);
-  font-style: normal;
-  font-weight: normal;
   font-size: 1rem;
   line-height: 1.3125rem;
   color: var(--font-color);
@@ -188,8 +179,6 @@ i {
 }
 .sixth-block__form-services__list-label {
   font-family: var(--font-fm);
-  font-style: normal;
-  font-weight: normal;
   font-size: 1rem;
   line-height: 1.3125rem;
   color: var(--font-color);
@@ -231,8 +220,6 @@ i {
 }
 .sixth-block__form-time > time {
   font-family: var(--font-fm);
-  font-style: normal;
-  font-weight: normal;
   font-size: 6rem;
   line-height: 7.875rem;
   color: var(--font-color);
@@ -251,7 +238,6 @@ i {
     0.625rem 0.625rem 0 0 var(--bg-color);
   margin: 1.25rem 0 1.4788rem 0;
   font-family: var(--font-fm);
-  font-style: normal;
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.25rem;
@@ -263,7 +249,6 @@ i {
   padding: 1rem 0 0.9375rem 0;
   margin: 1.25rem 0 1.4788rem 0;
   font-family: var(--font-fm);
-  font-style: normal;
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.25rem;
@@ -286,8 +271,6 @@ i {
 }
 .sixth-block__form-time__agree-label {
   font-family: var(--font-fm);
-  font-style: normal;
-  font-weight: normal;
   font-size: 0.75rem;
   line-height: 0.9375rem;
   letter-spacing: 0.015em;
@@ -328,7 +311,6 @@ i {
   .sixth-block__title-adapt {
     display: block;
     font-family: var(--font-fm);
-    font-style: normal;
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 1.5rem;
@@ -382,7 +364,6 @@ i {
   }
   .sixth-block__form-time__button-adapt > label {
     font-family: var(--font-fm);
-    font-style: normal;
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 1.5rem;

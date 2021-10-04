@@ -10,7 +10,6 @@ footer {
 }
 .footer-block__logo {
   font-family: var(--font-fm);
-  font-style: normal;
   font-weight: 600;
   font-size: 1.875rem;
   line-height: 2.3125rem;
@@ -19,8 +18,6 @@ footer {
 .footer-block__title-p-one,
 .footer-block__title-p-two {
   font-family: var(--font-fm);
-  font-style: normal;
-  font-weight: normal;
   font-size: 1rem;
   line-height: 1.3125rem;
   color: #0e0f12;
@@ -33,7 +30,6 @@ footer {
 }
 .footer-block__menu > li {
   font-family: var(--font-fm);
-  font-style: normal;
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -54,7 +50,6 @@ footer {
 }
 .footer-block__email {
   font-family: var(--font-fm);
-  font-style: normal;
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -72,7 +67,6 @@ footer {
 }
 .footer-block__title {
   font-family: var(--font-fm);
-  font-style: normal;
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -106,7 +100,6 @@ footer {
 }
 .footer-block__callback-btn > label {
   font-family: var(--font-fm);
-  font-style: normal;
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -114,7 +107,6 @@ footer {
 }
 .footer-block__phone-number {
   font-family: var(--font-fm);
-  font-style: normal;
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -172,7 +164,6 @@ footer {
   }
   .footer-block__callback-btn-adapt > label {
     font-family: var(--font-fm);
-    font-style: normal;
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 1.5rem;

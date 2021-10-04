@@ -20,7 +20,6 @@ header {
 }
 .header-block__logo {
   font-family: var(--font-fm);
-  font-style: normal;
   font-weight: 600;
   font-size: 1.875rem;
   line-height: 2.3125rem;
@@ -44,7 +43,6 @@ header {
 .header-block__main-menu > li {
   margin: 0.4375rem 1.25rem;
   font-family: var(--font-fm);
-  font-style: normal;
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 1.375rem;
@@ -60,7 +58,6 @@ header {
 .header-block__phone-number {
   margin-top: 0.3125rem;
   font-family: var(--font-fm);
-  font-style: normal;
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 1.8125rem;
@@ -155,7 +152,6 @@ header {
   .header-block__hamburger-main-menu > ul > li {
     margin: 0.4375rem 1.25rem;
     font-family: var(--font-fm);
-    font-style: normal;
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 1.75rem;

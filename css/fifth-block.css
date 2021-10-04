@@ -5,29 +5,27 @@
 .fifth-block > h2 {
   padding-top: 6.25rem;
 }
-.fifth-block > div {
+.fifth-block__reviews {
   display: flex;
   justify-content: space-around;
   flex-wrap: no-wrap;
   margin-bottom: 3.75rem;
 }
-.fifth-block > div > div {
+.fifth-block__reviews > div {
   margin: 0 1.25rem;
 }
-.fifth-block > div > div > h3 {
+.fifth-block__reviews > div > h3 {
   margin: 0 0 0.625rem 0;
   text-align: left;
 }
-.fifth-block > div > div > p > time {
+.fifth-block__reviews > div > p > time {
   font-family: var(--font-fm);
-  font-style: normal;
-  font-weight: normal;
   font-size: 1rem;
   line-height: 1.3125rem;
   color: var(--font-color);
   margin-right: 0.625rem;
 }
-.fifth-block > div > div > p {
+.fifth-block__reviews > div > p {
   margin-bottom: 1.1875rem;
 }
 .fifth-block__text-reviews-one,
@@ -37,8 +35,6 @@
 .fifth-block__text-reviews-full-two,
 .fifth-block__text-reviews-full-three {
   font-family: var(--font-fm);
-  font-style: normal;
-  font-weight: normal;
   font-size: 1rem;
   line-height: 1.3125rem;
   color: var(--font-color);
@@ -48,10 +44,8 @@
 .fifth-block__text-reviews-full-three {
   display: none;
 }
-.fifth-block > div > div > span {
+.fifth-block__reviews > div > span {
   font-family: var(--font-fm);
-  font-style: normal;
-  font-weight: normal;
   font-size: 1rem;
   line-height: 1.3125rem;
   color: var(--font-color);
@@ -72,7 +66,6 @@
 }
 .fifth-block > button > label {
   font-family: var(--font-fm);
-  font-style: normal;
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -85,11 +78,14 @@
   display: none;
 }
 .show {
-  display: block;
-  width: 21.875rem;
+  display: flex;
+  /*width: 21.875rem;*/
 }
 /*Adaptive*/
 @media (max-width: 73.75rem) {
+  .fifth-block__reviews {
+    margin-left: 0.6875rem;
+  }
   .fifth-block__reviews-adapt-three {
     display: none;
   }
@@ -103,7 +99,10 @@
     line-height: 1.5rem;
     margin-bottom: 2.5rem;
   }
-  .fifth-block > div > div > h3 {
+  .fifth-block__reviews {
+    margin-left: 0.6875rem;
+  }
+  .fifth-block__reviews > div > h3 {
     font-weight: 500;
     font-size: 1.125rem;
     line-height: 1.375rem;
