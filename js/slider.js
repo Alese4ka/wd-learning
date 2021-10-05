@@ -7,14 +7,20 @@ const carThree = document.querySelector('.fourth-block__cars__description-three'
 const carBtnOne = document.querySelector('.fourth-block__cars-button-one');
 const carBtnTwo = document.querySelector('.fourth-block__cars-button-two');
 const carBtnThree = document.querySelector('.fourth-block__cars-button-three');
+const dotOne = document.querySelector('.dot-one');
+const dotTwo = document.querySelector('.dot-two');
+const dotThree = document.querySelector('.dot-three');
 
 let mediaQuery = window.matchMedia('(min-width: 1211px)');
 
 arrowLeft.addEventListener('click', () => previousSlide());
 arrowRight.addEventListener('click', () => nextSlide());
-carBtnOne.addEventListener('click', () => changeSlides('one'));
-carBtnTwo.addEventListener('click', () => changeSlides('two'));
-carBtnThree.addEventListener('click', () => changeSlides('three'));
+carBtnOne.addEventListener('click', () => currentSlide(1));
+carBtnTwo.addEventListener('click', () => currentSlide(2));
+carBtnThree.addEventListener('click', () => currentSlide(3));
+//carBtnOne.addEventListener('click', () => changeSlides('one'));
+//carBtnTwo.addEventListener('click', () => changeSlides('two'));
+//carBtnThree.addEventListener('click', () => changeSlides('three'));
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -66,65 +72,10 @@ function showSlides(n) {
       btnSlides[i].className = btnSlides[i].className.replace(' color-border-down', '');
     }
     for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(' color-border-down', '');
+      dots[i].className = dots[i].className.replace(' color-border-circle', '');
     }
     slides[slideIndex - 1].style.display = 'flex';
     btnSlides[slideIndex - 1].className += ' color-border-down';
-    dots[slideIndex - 1].className += ' color-border-down';
-  }
-}
-
-function changeSlides(btn) {
-  if (mediaQuery.matches) {
-    if(btn === 'one'){
-      carOne.style.display = 'flex';
-      carTwo.style.display = 'none';
-      carThree.style.display = 'none';
-      carBtnTwo.style.border = '0.0625rem solid #ebebeb';
-      carBtnThree.style.border = '0.0625rem solid #ebebeb';
-      carBtnOne.style.border = '0.0625rem solid #fed100';
-    }
-    else if(btn === 'two'){
-      carTwo.style.display = 'flex';
-      carOne.style.display = 'none';
-      carThree.style.display = 'none';  
-      carBtnOne.style.border = '0.0625rem solid #ebebeb';
-      carBtnThree.style.border = '0.0625rem solid #ebebeb';
-      carBtnTwo.style.border = '0.0625rem solid #fed100';
-    }
-    else if(btn === 'three'){
-      carThree.style.display = 'flex';
-      carTwo.style.display = 'none';
-      carOne.style.display = 'none';
-      carBtnTwo.style.border = '0.0625rem solid #ebebeb';
-      carBtnOne.style.border = '0.0625rem solid #ebebeb';
-      carBtnThree.style.border = '0.0625rem solid #fed100';
-    }  
-  }
-  else {
-    if(btn === 'one'){
-      carOne.style.display = 'flex';
-      carTwo.style.display = 'none';
-      carThree.style.display = 'none';
-      carBtnTwo.style.border = 'none';
-      carBtnThree.style.border = 'none';
-      carBtnOne.style.border = 'none';
-    }
-    else if(btn === 'two'){
-      carTwo.style.display = 'flex';
-      carOne.style.display = 'none';
-      carThree.style.display = 'none';  
-      carBtnOne.style.border = '0.0625rem solid none';
-      carBtnThree.style.border = '0.0625rem solid none';
-      carBtnTwo.style.border = '0.0625rem solid none';
-    }
-    else if(btn === 'three'){
-      carThree.style.display = 'flex';
-      carTwo.style.display = 'none';
-      carOne.style.display = 'none';
-      carBtnTwo.style.border = '0.0625rem solid none';
-      carBtnOne.style.border = '0.0625rem solid none';
-      carBtnThree.style.border = '0.0625rem solid none';
-    }
+    dots[slideIndex - 1].className += ' color-border-circle';
   }
 }

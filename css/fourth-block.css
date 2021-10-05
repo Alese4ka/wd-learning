@@ -137,11 +137,7 @@
   .fourth-block__cars-button > div {
     border: none;
   }
-  .fourth-block__cars-button > div:hover {
-    border: none;
-    text-decoration: underline var(--bg-color);
-    font-weight: 500;
-  }
+  .fourth-block__cars-button > div:hover,
   .color-border-down {
     border: none;
     text-decoration: underline var(--bg-color);
@@ -188,8 +184,9 @@
     margin: 0.5rem 0.5rem 0.7rem 0.5rem;
   }
   .fourth-block__cars__description__slider-adapt
-    input[type="radio"]:checked
-    + label:before {
+    input[type="radio"]
+    + label:after,
+  .color-border-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -249,11 +246,6 @@
     font-weight: 400;
     line-height: 1.25rem;
   }
-  .fourth-block__cars-button > div:hover {
-    border: none;
-    text-decoration: underline var(--bg-color);
-    font-weight: 500;
-  }
   .fourth-block__cars__description__pic {
     display: block;
     margin: 0;
@@ -291,16 +283,6 @@
     width: 8px;
     height: 8px;
     margin: 0.5rem 0.5rem 0.7rem 0.5rem;
-  }
-  .fourth-block__cars__description__slider-adapt
-    input[type="radio"]:checked
-    + label:before {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 2px solid var(--bg-color);
-    background: url(/assets/svg/dot_big.svg) no-repeat center;
-    margin: 0;
   }
   .fourth-block__cars__description__info__title-adapt {
     font-size: 0.75rem;
