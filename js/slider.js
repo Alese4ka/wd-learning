@@ -18,9 +18,6 @@ arrowRight.addEventListener('click', () => nextSlide());
 carBtnOne.addEventListener('click', () => currentSlide(1));
 carBtnTwo.addEventListener('click', () => currentSlide(2));
 carBtnThree.addEventListener('click', () => currentSlide(3));
-//carBtnOne.addEventListener('click', () => changeSlides('one'));
-//carBtnTwo.addEventListener('click', () => changeSlides('two'));
-//carBtnThree.addEventListener('click', () => changeSlides('three'));
 
 let slideIndex = 1;
 showSlides(slideIndex);
