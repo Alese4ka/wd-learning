@@ -177,7 +177,7 @@
     input[type="radio"]
     + label:before {
     content: "";
-    background: url(/assets/svg/dot.svg) no-repeat center;
+    background: url(./assets/svg/dot.svg) no-repeat center;
     display: inline-block;
     width: 8px;
     height: 8px;
@@ -191,7 +191,7 @@
     height: 20px;
     border-radius: 50%;
     border: 2px solid var(--bg-color);
-    background: url(/assets/svg/dot_big.svg) no-repeat center;
+    background: url(./assets/svg/dot_big.svg) no-repeat center;
     margin: 0;
   }
   .fourth-block__cars__description__info__title-adapt {
@@ -278,7 +278,7 @@
     input[type="radio"]
     + label:before {
     content: "";
-    background: url(/assets/svg/dot.svg) no-repeat center;
+    background: url(./assets/svg/dot.svg) no-repeat center;
     display: inline-block;
     width: 8px;
     height: 8px;
