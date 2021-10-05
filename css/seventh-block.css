@@ -18,8 +18,6 @@
   .seventh-block__adapt {
     display: block;
     font-family: var(--font-fm);
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.9375rem;
     line-height: 1.25rem;
     color: var(--font-color);

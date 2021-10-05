@@ -29,8 +29,21 @@
 			<a href="#header" class="header-block__logo">
 				MOVEE
 			</a>
-			<nav class="header-block__hamburger-menu">
-				<span></span>
+			<div class="header-block__hamburger-menu">
+				<nav class="header-block__hamburger-main-menu">
+					<ul>
+						<li><a href=#third-wrapper>Цены</a></li>
+						<li><a href=#fourth-wrapper>Автопарк</a></li>
+						<li><a href=#fifth-wrapper>Отзывы</a></li>
+						<li><a href=#footer>Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="header-block__hamburger-menu__button">
+					<span class="header-block__hamburger-menu__lines"></span>
+				</div>
+				<div class="header-block__hamburger-menu__overlay"></div>
+			</div>
+			<nav>
 				<ul class="header-block__main-menu">
 					<li><a href=#third-wrapper>Цены</a></li>
 					<li><a href=#fourth-wrapper>Автопарк</a></li>
@@ -168,64 +181,94 @@
 				<h2>Автопарк</h2>
 				<h3 class="fourth-block__cars-info">10 видов автомобилей от 800 кг до 10 тонн</h3>
 				<div class="fourth-block__cars-button">
-					<div>
+					<div class="fourth-block__cars-button-one slider-btn">
 						Газели
 					</div>
-					<div>
+					<div class="fourth-block__cars-button-two slider-btn">
 						Каблуки
 					</div>
-					<div>
+					<div class="fourth-block__cars-button-three slider-btn">
 						Грузовики
 					</div>
 				</div>
-				<div class="fourth-block__cars__description">
-					<div class="fourth-block__cars__description__arrow">
-						<img src="./assets/svg/arrow_left.svg" alt="arrow-left">
-					</div>
-					<div class="fourth-block__cars__description__info">
-						<h3 class="fourth-block__cars__description__info__title">Газель 3 метра</h3>
-						<ul>
-							<li>Ширина 2 м</li>
-							<li>Высота 2 м</li>
-							<li>Объем 16 м³</li>
-							<li>Грузоподъемность 1,5 т</li>
-						</ul>
-						<button class="fourth-block__cars__description__info__button">
+				<div class="fourth-block__slider">
+					<p>
+						<i class="fourth-block__cars__description__arrow-left"></i>
+					</p>
+					<div class="fourth-block__cars__description">
+						<div class="fourth-block__cars__description-one slider">
+							<div class="fourth-block__cars__description__info">
+								<h3 class="fourth-block__cars__description__info__title">Газель 3 метра</h3>
+								<ul>
+									<li>Ширина 2 м</li>
+									<li>Высота 2 м</li>
+									<li>Объем 16 м³</li>
+									<li>Грузоподъемность 1,5 т</li>
+								</ul>
+								<button class="fourth-block__cars__description__info__button">
+									<label>Заказать</label>
+								</button>
+							</div>
+							<div>
+								<img class="fourth-block__cars__description__pic" src="./assets/img/gazel.png" alt="gazel">
+							</div>
+						</div>
+						<div class="fourth-block__cars__description-two slider">
+							<div class="fourth-block__cars__description__info">
+								<h3 class="fourth-block__cars__description__info__title">Каблук 2 метра</h3>
+								<ul>
+									<li>Ширина 1.8 м</li>
+									<li>Высота 1.2 м</li>
+									<li>Объем 8 м³</li>
+									<li>Грузоподъемность 0.8 т</li>
+								</ul>
+								<button class="fourth-block__cars__description__info__button">
+									<label>Заказать</label>
+								</button>
+							</div>
+							<div>
+								<img class="fourth-block__cars__description__pic" src="./assets/img/kabluk.png" alt="gazel">
+							</div>
+						</div>
+						<div class="fourth-block__cars__description-three slider">
+							<div class="fourth-block__cars__description__info">
+								<h3 class="fourth-block__cars__description__info__title">Грузовик 3 метра</h3>
+								<ul>
+									<li>Ширина 3 м</li>
+									<li>Высота 3 м</li>
+									<li>Объем 20 м³</li>
+									<li>Грузоподъемность 2 т</li>
+								</ul>
+								<button class="fourth-block__cars__description__info__button">
+									<label>Заказать</label>
+								</button>
+							</div>
+							<div>
+								<img class="fourth-block__cars__description__pic" src="./assets/img/big_truck.png" alt="gazel">
+							</div>
+						</div>
+						<h3 class="fourth-block__cars__description__info__title-adapt">Газель 3 метра/1,5 тонны</h3>
+						<div class="fourth-block__cars__description__slider-adapt">
+							<p class="dot-one dot">
+								<input type="radio" id="radio-one" name="radio" onclick="currentSlide(1)">
+								<label for="radio-one"></label>
+							</p>
+							<p class="dot-two dot">
+								<input type="radio" id="radio-two" name="radio" onclick="currentSlide(2)">
+								<label for="radio-two"></label>
+							</p>
+							<p class="dot-three dot">
+								<input type="radio" id="radio-three" name="radio" onclick="currentSlide(3)">
+								<label for="radio-three"></label>
+							</p>
+						</div>
+						<button class="fourth-block__cars__description__info__button-adapt">
 							<label>Заказать</label>
 						</button>
 					</div>
-					<div>
-						<img class="fourth-block__cars__description__pic" src="./assets/img/gazel.png" alt="gazel">
-					</div>
-					<h3 class="fourth-block__cars__description__info__title-adapt">Газель 3 метра/1,5 тонны</h3>
-					<div class="fourth-block__cars__description__slider-adapt">
-						<p>
-							<input type="radio" id="radio-one" name="radio">
-							<label for="radio-one"></label>
-						</p>
-						<p>
-							<input type="radio" id="radio-two" name="radio">
-							<label for="radio-two"></label>
-						</p>
-						<p>
-							<input type="radio" id="radio-three" name="radio">
-							<label for="radio-three"></label>
-						</p>
-						<p>
-							<input type="radio" id="radio-four" name="radio">
-							<label for="radio-four"></label>
-						</p>
-						<p>
-							<input type="radio" id="radio-five" name="radio">
-							<label for="radio-five"></label>
-						</p>
-					</div>
-					<button class="fourth-block__cars__description__info__button-adapt">
-						<label>Заказать</label>
-					</button>
-					<div class="fourth-block__cars__description__arrow">
-						<img src="./assets/svg/arrow_right.svg" alt="arrow-right">
-					</div>
+					<p>
+						<i class="fourth-block__cars__description__arrow-right"></i>
+					</p>
 				</div>
 			</div>
 		</section>
@@ -233,7 +276,7 @@
 		<section id="fifth-wrapper">
 			<div class="fifth-block">
 				<h2>Отзывы</h2>
-				<div>
+				<div class="fifth-block__reviews">
 					<div>
 						<h3>Ирина</h3>
 						<p>
@@ -244,12 +287,19 @@
 							<img src="./assets/svg/star.svg" alt="star">
 							<img src="./assets/svg/star.svg" alt="star">
 						</p>
-						<p class="fifth-block__text-reviews">Обращение к вам за помощью в переезде оставило только положительные
+						<p class="fifth-block__text-reviews-one">Обращение к вам за помощью в переезде оставило только положительные
 							впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом
-							во двор, он проявил себя как компетентный
-							и профессиональный сотрудник, за что ему огромное...
+							во двор, он проявил себя как компетентный и профессиональный сотрудник, за что ему огромное...
 						</p>
-						<span>Читать полностью</span>
+						<p class="fifth-block__text-reviews-full-one">Обращение к вам за помощью в переезде оставило только
+							положительные
+							впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом
+							во двор, он проявил себя как компетентный и профессиональный сотрудник, за что ему огромное спасибо.
+							Обращение к вам за помощью в переезде оставило только положительные
+							впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом
+							во двор, он проявил себя как компетентный и профессиональный сотрудник.
+						</p>
+						<span class="fifth-block__open-reviews-one">Читать полностью</span>
 					</div>
 					<div class="fifth-block__reviews-adapt-two">
 						<h3>Светлана Васильевна </h3>
@@ -261,11 +311,19 @@
 							<img src="./assets/svg/star.svg" alt="star">
 							<img src="./assets/svg/star.svg" alt="star">
 						</p>
-						<p class="fifth-block__text-reviews">Сегодня ( 13.09.2019 ) мы переехали. Остались очень довольны, несмотря
+						<p class="fifth-block__text-reviews-two">Сегодня ( 13.09.2019 ) мы переехали. Остались очень довольны,
+							несмотря
 							на то, что к нам опоздали на 1,5 часа. Морально были к этому готовы ( в прошлый переезд в другой фирме
 							тоже опоздали на час). Водитель заранее позвонил, предупредил, что задерживается.
 							Когда....</p>
-						<span>Читать полностью</span>
+						<p class="fifth-block__text-reviews-full-two">Сегодня ( 13.09.2019 ) мы переехали. Остались очень довольны,
+							несмотря
+							на то, что к нам опоздали на 1,5 часа. Морально были к этому готовы ( в прошлый переезд в другой фирме
+							тоже опоздали на час). Водитель заранее позвонил, предупредил, что задерживается.
+							Когда морально были к этому готовы ( в прошлый переезд в другой фирме
+							тоже опоздали на час). Водитель заранее позвонил, предупредил, что задерживается.
+						</p>
+						<span class="fifth-block__open-reviews-two">Читать полностью</span>
 					</div>
 					<div class="fifth-block__reviews-adapt-three">
 						<h3>Ольга Петрова</h3>
@@ -277,10 +335,18 @@
 							<img src="./assets/svg/star.svg" alt="star">
 							<img src="./assets/svg/star.svg" alt="star">
 						</p>
-						<p class="fifth-block__text-reviews">Могу на 100% порекомендовать компанию MOVEE и отметить, что цены
+						<p class="fifth-block__text-reviews-three">Могу на 100% порекомендовать компанию MOVEE и отметить, что цены
 							фиксированы, что упрощает расчет. Безо всяких заморочек, в отличии от их конкурентов. Упаковали все
-							качественно и быстро. Все вещи приехали в сохранности. Особая благодарность Александру за его... </p>
-						<span>Читать полностью</span>
+							качественно и быстро. Все вещи приехали в сохранности. Особая благодарность Александру за его...
+						</p>
+						<p class="fifth-block__text-reviews-full-three">Могу на 100% порекомендовать компанию MOVEE и отметить, что
+							цены фиксированы, что упрощает расчет. Безо всяких заморочек, в отличии от их конкурентов. Упаковали все
+							качественно и быстро. Все вещи приехали в сохранности. Особая благодарность Александру за его могу на 100%
+							порекомендовать компанию MOVEE и отметить, что цены фиксированы, что упрощает расчет. Безо всяких
+							заморочек, в отличии от их конкурентов. Упаковали все
+							качественно и быстро. Все вещи приехали в сохранности. Особая благодарность Александру за его.
+						</p>
+						<span class="fifth-block__open-reviews-three">Читать полностью</span>
 					</div>
 				</div>
 				<button>
@@ -288,106 +354,111 @@
 				</button>
 			</div>
 		</section>
+
 		<section class="sixth-wrapper">
 			<div class="sixth-block">
-				<h2 class="sixth-block__title">Закажи переезд прямо сейчас со скидкой %</h2>
-				<h2 class="sixth-block__title-adapt">Закажи переезд прямо сейчас</h2>
-				<p>Мы перезвоним в течении 10 секунд</p>
-				<div class="sixth-block__form-contact">
-					<input type="text" name="name" placeholder="Ваше имя" size="32">
-					<input type="tel" name="tel" placeholder="Телефон" size="32">
-				</div>
-				<div class="sixth-block__form-region">
-					<h6 class="sixth-block__form-region-title">Укажите область</h6>
-					<h6>Укажите город</h6>
-				</div>
-				<div class="sixth-block__form-region-select">
-					<select name="select">
-						<option value="" default disabled selected>Например: Минская</option>
-						<option value="value1">Витебская</option>
-						<option value="value3">Брестсткая</option>
-						<option value="value3">Гомельская</option>
-						<option value="value2">Гродненская</option>
-						<option value="value2">Минская</option>
-						<option value="value1">Могилевская</option>
-					</select>
-					<select name="select">
-						<option value="value1">Мозырь</option>
-						<option value="value3">Минск</option>
-						<option value="value3">Брест</option>
-						<option value="value2">Гродно</option>
-						<option value="value2">Гомель</option>
-						<option value="value1">Витебск</option>
-					</select>
-				</div>
-				<h6 class="sixth-block__form-money">Способ оплаты</h6>
-				<div class="sixth-block__form-money-list">
-					<p>
-						<input type="radio" id="radio-money-one" name="radio" checked>
-						<label class="sixth-block__form-money-list__item" for="radio-money-one">
-							<p class="sixth-block__form-money-list__item-p">Наличными курьеру</p>
-						</label>
-					</p>
-					<p>
-						<input type="radio" id="radio-money-two" name="radio">
-						<label class="sixth-block__form-money-list__item" for="radio-money-two">
-							<p class="sixth-block__form-money-list__item-p">Картой курьеру</p>
-						</label>
-					</p>
-					<p>
-						<input type="radio" id="radio-three" name="radio">
-						<label class="sixth-block__form-money-list__item" for="radio-money-three">
-							<p class="sixth-block__form-money-list__item-p">Банковский перевод</p>
-						</label>
-					</p>
-				</div>
-				<div class="sixth-block__form-services">
-					<h6>Дополнительные услуги</h6>
-					<div>
-						<img src="./assets/svg/arrow_up.svg" alt="arrow_up">
+				<form class="sixth-block__form-order">
+					<h2 class="sixth-block__title">Закажи переезд прямо сейчас со скидкой %</h2>
+					<h2 class="sixth-block__title-adapt">Закажи переезд прямо сейчас</h2>
+					<p>Мы перезвоним в течении 10 секунд</p>
+					<div class="sixth-block__form-contact">
+						<input type="text" name="name" placeholder="Ваше имя" size="32" class="sixth-block__form-contact__name">
+						<input type="tel" name="tel" placeholder="Телефон" size="32" class="sixth-block__form-contact__tel">
 					</div>
-				</div>
-				<div class="sixth-block__form-services__list">
-					<p>
-						<input type="checkbox" id="service-one" name="service">
-						<label class="sixth-block__form-services__list-label" for="service-one">Вызов замерщика</label>
-					</p>
-					<p>
-						<input type="checkbox" id="service-two" name="service">
-						<label class="sixth-block__form-services__list-label" for="service-two">Упаковка для хрупких
-							предметов</label>
-					</p>
-					<p>
-						<input type="checkbox" id="service-three" name="service">
-						<label class="sixth-block__form-services__list-label" for="service-three">Кран</label>
-					</p>
-					<p>
-						<input type="checkbox" id="service-four" name="service">
-						<label class="sixth-block__form-services__list-label" for="service-four">Сборка мебели</label>
-					</p>
-					<p>
-						<input type="checkbox" id="service-five" name="service">
-						<label class="sixth-block__form-services__list-label" for="service-five">Крупногабаритные предметы</label>
-					</p>
-				</div>
-				<div class="sixth-block__form-time">
-					<time>5:37:25</time>
-					<div class="sixth-block__form-time__button">
-						<button class="sixth-block__form-time__main-button">
-							<label>Заказать</label>
-						</button>
-						<button class="sixth-block__form-time__button-adapt">
-							<label>Перезвонить мне</label>
-						</button>
-						<div class="sixth-block__form-time__agree">
-							<p>
-								<input type="checkbox" id="agree" name="agree">
-								<label class="sixth-block__form-time__agree-label" for="agree">Даю согласие на обработку данных</label>
-							</p>
+					<div class="sixth-block__form-region">
+						<h6 class="sixth-block__form-region-title">Укажите область</h6>
+						<h6>Укажите город</h6>
+					</div>
+					<div class="sixth-block__form-region-select">
+						<select name="select">
+							<option value="" default disabled selected>Например: Минская</option>
+							<option value="value1">Витебская</option>
+							<option value="value3">Брестсткая</option>
+							<option value="value3">Гомельская</option>
+							<option value="value2">Гродненская</option>
+							<option value="value2">Минская</option>
+							<option value="value1">Могилевская</option>
+						</select>
+						<select name="select" id="select">
+							<option value="value1">Мозырь</option>
+							<option value="value3">Минск</option>
+							<option value="value3">Брест</option>
+							<option value="value2">Гродно</option>
+							<option value="value2">Гомель</option>
+							<option value="value1">Витебск</option>
+						</select>
+					</div>
+					<div class="sixth-block__form-region-select__add">
+						<input type="text" id="name" placeholder="Добавить город" autocomplete="off">
+					</div>
+					<h6 class="sixth-block__form-money">Способ оплаты</h6>
+					<div class="sixth-block__form-money-list">
+						<p>
+							<input type="radio" id="radio-money-one" name="radio" checked>
+							<label class="sixth-block__form-money-list__item" for="radio-money-one">
+								<p class="sixth-block__form-money-list__item-p">Наличными курьеру</p>
+							</label>
+						</p>
+						<p>
+							<input type="radio" id="radio-money-two" name="radio">
+							<label class="sixth-block__form-money-list__item" for="radio-money-two">
+								<p class="sixth-block__form-money-list__item-p">Картой курьеру</p>
+							</label>
+						</p>
+						<p>
+							<input type="radio" id="radio-money-three" name="radio">
+							<label class="sixth-block__form-money-list__item" for="radio-money-three">
+								<p class="sixth-block__form-money-list__item-p">Банковский перевод</p>
+							</label>
+						</p>
+					</div>
+					<div class="sixth-block__form-services">
+						<h6>Дополнительные услуги</h6>
+						<p class="sixth-block__form-services-p">
+							<i class="sixth-block__form-services__arrow"></i>
+						</p>
+					</div>
+					<div class="sixth-block__form-services__list">
+						<p>
+							<input type="checkbox" id="service-one" name="service">
+							<label class="sixth-block__form-services__list-label" for="service-one">Вызов замерщика</label>
+						</p>
+						<p>
+							<input type="checkbox" id="service-two" name="service">
+							<label class="sixth-block__form-services__list-label" for="service-two">Упаковка для хрупких
+								предметов</label>
+						</p>
+						<p>
+							<input type="checkbox" id="service-three" name="service">
+							<label class="sixth-block__form-services__list-label" for="service-three">Кран</label>
+						</p>
+						<p>
+							<input type="checkbox" id="service-four" name="service">
+							<label class="sixth-block__form-services__list-label" for="service-four">Сборка мебели</label>
+						</p>
+						<p>
+							<input type="checkbox" id="service-five" name="service">
+							<label class="sixth-block__form-services__list-label" for="service-five">Крупногабаритные предметы</label>
+						</p>
+					</div>
+					<div class="sixth-block__form-time">
+						<time id="timer">06:00:00</time>
+						<div class="sixth-block__form-time__button">
+							<input type="submit" class="sixth-block__form-time__main-button" value="Заказать со скидкой">
+							<input type="submit" class="sixth-block__form-time__button-adapt" value="Перезвонить мне">
+							<div class="sixth-block__form-time__agree">
+								<p>
+									<input type="checkbox" id="agree" name="agree">
+									<label class="sixth-block__form-time__agree-label" for="agree">Даю согласие на обработку
+										данных</label>
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
+			</div>
+			</form>
 		</section>
+
 		<section class="seventh-wrapper">
 			<div class="seventh-block">
 				<iframe
@@ -432,8 +503,10 @@
 				<p class="footer-block__email"><a href="mailto:hello@movee.ru">hello@movee.ru</a></p>
 				<p class="footer-block__title">Поделиться в соц. сетях</p>
 				<div class="footer-block__extra-social-menu">
-					<a href="https://vk.com/" target="_blank"><img src="./assets/svg/vk_big.svg" alt="vk"></a>
-					<a href="https://facebook.com/" target="_blank"><img src="./assets/svg/facebook_big.svg" alt="facebook"></a>
+					<a href="https://vk.com/share.php?url=https://127.0.0.1:5500/" target="_blank"
+						onclick="return Share.me(this);"><img src="./assets/svg/vk_big.svg" alt="vk"></a>
+					<a href="https://www.facebook.com/sharer.php?u=http://127.0.0.1:5500/" target="_blank"
+						onclick="return Share.me(this);"><img src="./assets/svg/facebook_big.svg" alt="facebook"></a>
 				</div>
 			</div>
 			<div class="footer-block__callback">
@@ -449,6 +522,14 @@
 			</div>
 		</div>
 	</footer>
+	<script src="./js/hide-block.js"></script>
+	<script src="./js/slider.js"></script>
+	<script src="./js/timer.js"></script>
+	<script src="./js/valid-form.js"></script>
+	<script src="./js/add-option.js"></script>
+	<script src="./js/soc-links.js"></script>
+	<script src="./js/burger-menu.js"></script>
+	<script src="./js/full-reviews.js"></script>
 </body>
 
 </html>

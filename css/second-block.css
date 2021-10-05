@@ -3,7 +3,6 @@
 }
 h2 {
   font-family: var(--font-fm);
-  font-style: normal;
   font-weight: 600;
   font-size: 1.875rem;
   line-height: 2.3125rem;
@@ -18,7 +17,6 @@ h2 {
 }
 h4 {
   font-family: var(--font-fm);
-  font-style: normal;
   font-weight: 300;
   font-size: 3.125rem;
   line-height: 3.8125rem;
@@ -28,7 +26,6 @@ h4 {
 }
 h5 {
   font-family: var(--font-fm);
-  font-style: normal;
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -43,8 +40,6 @@ h5 {
 }
 .second-block__list__description > div > p {
   font-family: var(--font-fm);
-  font-style: normal;
-  font-weight: normal;
   font-size: 1rem;
   line-height: 1.3125rem;
   color: var(--font-color);

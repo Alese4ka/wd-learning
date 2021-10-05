@@ -10,20 +10,24 @@
   align-items: center;
   margin-bottom: 3.75rem;
 }
-.fourth-block__cars-button > div {
+.fourth-block__cars-button-one,
+.fourth-block__cars-button-two,
+.fourth-block__cars-button-three {
   background: var(--bg-sec-color);
   margin-right: 1.25rem;
   border: 0.0625rem solid #ebebeb;
   padding: 0.8125rem 1rem 0.8125rem 1rem;
   width: 12.5625rem;
   font-family: var(--font-fm);
-  font-style: normal;
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.5rem;
   text-align: center;
   color: var(--font-color);
   cursor: pointer;
+}
+.color-border {
+  border: 0.0625rem solid var(--bg-color);
 }
 .fourth-block__cars-button > div:hover {
   border: 0.0625rem solid var(--bg-color);
@@ -34,8 +38,33 @@
   justify-content: center;
   align-items: center;
 }
-.fourth-block__cars__description__arrow {
+.fourth-block__cars__description-one {
+  display: flex;
+  justify-content: space-between;
+}
+.fourth-block__cars__description-two,
+.fourth-block__cars__description-three {
+  display: none;
+}
+.fourth-block__slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fourth-block__slider > p {
+  margin-bottom: 7.5rem;
+}
+.fourth-block__cars__description__arrow-left,
+.fourth-block__cars__description__arrow-right {
   cursor: pointer;
+}
+.fourth-block__cars__description__arrow-left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.fourth-block__cars__description__arrow-right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 .fourth-block__cars__description__info {
   margin: 0 7rem 0 7rem;
@@ -55,8 +84,6 @@
 .fourth-block__cars__description__info > ul > li {
   margin-bottom: 1.75rem;
   font-family: var(--font-fm);
-  font-style: normal;
-  font-weight: normal;
   font-size: 1rem;
   line-height: 1.3125rem;
   color: var(--font-color);
@@ -71,7 +98,6 @@
 }
 .fourth-block__cars__description__info__button > label {
   font-family: var(--font-fm);
-  font-style: normal;
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -89,6 +115,13 @@
 .fourth-block__cars__description__pic {
   margin-right: 7rem;
   max-width: 40.0625rem;
+  max-height: 28.3125rem;
+}
+.fourth-block__cars__description-two {
+  margin-bottom: 8rem;
+}
+.fourth-block__cars__description-three {
+  margin-bottom: 5rem;
 }
 /*Adaptive*/
 @media (max-width: 75.625rem) {
@@ -104,7 +137,8 @@
   .fourth-block__cars-button > div {
     border: none;
   }
-  .fourth-block__cars-button > div:hover {
+  .fourth-block__cars-button > div:hover,
+  .color-border-down {
     border: none;
     text-decoration: underline var(--bg-color);
     font-weight: 500;
@@ -118,7 +152,8 @@
     flex-direction: column;
   }
   .fourth-block__cars__description__info,
-  .fourth-block__cars__description__arrow {
+  .fourth-block__cars__description__arrow-left,
+  .fourth-block__cars__description__arrow-right {
     display: none;
   }
   .fourth-block__cars__description__info__title-adapt,
@@ -147,20 +182,19 @@
     width: 8px;
     height: 8px;
     margin: 0.5rem 0.5rem 0.7rem 0.5rem;
-    color: transparent;
   }
   .fourth-block__cars__description__slider-adapt
-    input[type="radio"]:checked
-    + label:before {
-    height: 20px;
+    input[type="radio"]
+    + label:after,
+  .color-border-circle {
     width: 20px;
+    height: 20px;
     border-radius: 50%;
     border: 2px solid var(--bg-color);
     background: url(/assets/svg/dot_big.svg) no-repeat center;
     margin: 0;
   }
   .fourth-block__cars__description__info__title-adapt {
-    font-weight: normal;
     font-size: 1.25rem;
     line-height: 1.5rem;
     margin: 0;
@@ -176,7 +210,6 @@
   }
   .fourth-block__cars__description__info__button-adapt > label {
     font-family: var(--font-fm);
-    font-style: normal;
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 1.5rem;
@@ -213,14 +246,9 @@
     font-weight: 400;
     line-height: 1.25rem;
   }
-  .fourth-block__cars-button > div:hover {
-    border: none;
-    text-decoration: underline var(--bg-color);
-    font-weight: 500;
-  }
   .fourth-block__cars__description__pic {
     display: block;
-    margin: 0 auto;
+    margin: 0;
     width: 90%;
   }
   .fourth-block__cars__description {
@@ -255,20 +283,8 @@
     width: 8px;
     height: 8px;
     margin: 0.5rem 0.5rem 0.7rem 0.5rem;
-    color: transparent;
-  }
-  .fourth-block__cars__description__slider-adapt
-    input[type="radio"]:checked
-    + label:before {
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: 2px solid var(--bg-color);
-    background: url(/assets/svg/dot_big.svg) no-repeat center;
-    margin: 0;
   }
   .fourth-block__cars__description__info__title-adapt {
-    font-weight: normal;
     font-size: 0.75rem;
     line-height: 0.9375rem;
     margin: 0;
@@ -284,7 +300,6 @@
   }
   .fourth-block__cars__description__info__button-adapt > label {
     font-family: var(--font-fm);
-    font-style: normal;
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 1.5rem;
