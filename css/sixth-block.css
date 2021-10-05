@@ -135,7 +135,7 @@ option[default] {
   width: 22px;
   border-radius: 50%;
   border: 2px solid var(--bg-color);
-  background: url("../../assets/svg/circle.svg") no-repeat center;
+  background: url("../assets/svg/circle.svg") no-repeat center;
 }
 /*Service*/
 .sixth-block__form-services {
@@ -208,7 +208,7 @@ i {
 .sixth-block__form-services__list
   input[type="checkbox"]:checked
   + label:before {
-  content: url("../../assets/svg/check.svg");
+  content: url("../assets/svg/check.svg");
   background-color: var(--bg-sec-color);
   border-color: var(--bg-color);
 }
@@ -299,7 +299,7 @@ i {
   transition: 0.2s;
 }
 .sixth-block__form-time__agree input[type="checkbox"]:checked + label:before {
-  content: url("../../assets/svg/check_agree.svg");
+  content: url("../assets/svg/check_agree.svg");
   border: none;
 }
 /*Adaptive*/
